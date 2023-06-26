@@ -1,8 +1,10 @@
 export const teamData = [
+
+  
   {
-    img: "/img/team-1.jpg",
-    name: "Ryan Tompson",
-    position: "Web Developer",
+    img: "/img/team-3.jpg",
+    name: "Gauranshi Gupta",
+    position: "Chair",
     socials: [
       {
         color: "light-blue",
@@ -10,37 +12,18 @@ export const teamData = [
       },
       {
         color: "blue",
-        name: "facebook",
+        name: "linkedin",
       },
       {
         color: "pink",
-        name: "dribbble",
-      },
-    ],
-  },
-  {
-    img: "/img/team-2.jpg",
-    name: "Romina Hadid",
-    position: "Marketing Specialist",
-    socials: [
-      {
-        color: "light-blue",
-        name: "twitter",
-      },
-      {
-        color: "blue",
-        name: "facebook",
-      },
-      {
-        color: "pink",
-        name: "dribbble",
+        name: "github",
       },
     ],
   },
   {
     img: "/img/team-3.jpg",
-    name: "Alexa Smith",
-    position: "UI/UX Designer",
+    name: "Taniska Jha",
+    position: "Vice Chair",
     socials: [
       {
         color: "light-blue",
@@ -48,18 +31,38 @@ export const teamData = [
       },
       {
         color: "blue",
-        name: "facebook",
+        name: "linkedin",
       },
       {
         color: "pink",
-        name: "dribbble",
+        name: "github",
+      },
+    ],
+  },
+  
+  {
+    img: "/img/team-4.png",
+    name: "Ayushi Gupta",
+    position: " Secretary",
+    socials: [
+      {
+        color: "light-blue",
+        name: "twitter",
+      },
+      {
+        color: "blue",
+        name: "linkedin",
+      },
+      {
+        color: "pink",
+        name: "github",
       },
     ],
   },
   {
     img: "/img/team-4.png",
-    name: "Jenna Kardi",
-    position: "Founder and CEO",
+    name: "Khusbu Rai",
+    position: "Joint Secretary",
     socials: [
       {
         color: "light-blue",
@@ -67,14 +70,171 @@ export const teamData = [
       },
       {
         color: "blue",
-        name: "facebook",
+        name: "linkedin",
       },
       {
         color: "pink",
-        name: "dribbble",
+        name: "github",
       },
     ],
   },
+  {
+    img: "/img/team-3.jpg",
+    name: "Aparna Garg",
+    position: "Web Chair",
+    socials: [
+      {
+        color: "light-blue",
+        name: "twitter",
+      },
+      {
+        color: "blue",
+        name: "linkedin",
+      },
+      {
+        color: "pink",
+        name: "github",
+      },
+    ],
+  },
+  {
+    img: "/img/team-4.png",
+    name: "Tina Goel",
+    position: "Membership Chair",
+    socials: [
+      {
+        color: "light-blue",
+        name: "twitter",
+      },
+      {
+        color: "blue",
+        name: "linkedin",
+      },
+      {
+        color: "pink",
+        name: "github",
+      },
+    ],
+  },
+  {
+    img: "/img/team-4.png",
+    name: "Vanshika Gupta",
+    position: "Treasurer",
+    socials: [
+      {
+        color: "light-blue",
+        name: "twitter",
+      },
+      {
+        color: "blue",
+        name: "linkedin",
+      },
+      {
+        color: "pink",
+        name: "github",
+      },
+    ],
+  },
+  {
+    img: "/img/team-4.png",
+    name: "Tejasvi Arneja",
+    position: "Executive Member",
+    socials: [
+      {
+        color: "light-blue",
+        name: "twitter",
+      },
+      {
+        color: "blue",
+        name: "linkedin",
+      },
+      {
+        color: "pink",
+        name: "github",
+      },
+    ],
+  },
+  {
+    img: "/img/team-4.png",
+    name: "Tanvi Gupta",
+    position: "Executive Member",
+    socials: [
+      {
+        color: "light-blue",
+        name: "twitter",
+      },
+      {
+        color: "blue",
+        name: "linkedin",
+      },
+      {
+        color: "pink",
+        name: "github",
+      },
+    ],
+  },
+  {
+    img: "/img/team-4.png",
+    name: "Shubhangi Mishra",
+    position: "Executive Member",
+    socials: [
+      {
+        color: "light-blue",
+        name: "twitter",
+      },
+      {
+        color: "blue",
+        name: "linkedin",
+      },
+      {
+        color: "pink",
+        name: "github",
+      },
+    ],
+  },
+  {
+    img: "/img/team-4.png",
+    name: "Sia Gupta",
+    position: "Executive Member",
+    socials: [
+      {
+        color: "light-blue",
+        name: "twitter",
+      },
+      {
+        color: "blue",
+        name: "linkedin",
+      },
+      {
+        color: "pink",
+        name: "github",
+      },
+    ],
+  },
+  {
+    img: "/img/team-4.png",
+    name: "Priyasvi Sharma",
+    position: "Executive Member",
+    socials: [
+      {
+        color: "light-blue",
+        name: "twitter",
+      },
+      {
+        color: "blue",
+        name: "linkedin",
+      },
+      {
+        color: "pink",
+        name: "github",
+      },
+    ],
+  },
+  
+  
+  
+  
+  
 ];
 
 export default teamData;

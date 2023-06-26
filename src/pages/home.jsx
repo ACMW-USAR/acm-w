@@ -581,32 +581,33 @@ export function Home() {
         </div>
         
       </section>
-      <section className="px-4 pt-20 pb-48">
-        <div className="container mx-auto">
-          <PageTitle heading="Here are our heroes">
-            According to the National Oceanic and Atmospheric Administration,
-            Ted, Scambos, NSIDClead scentist, puts the potentially record
-            maximum.
-          </PageTitle>
+      <section className="px-4 pt-20 pb-48 bg-gradient-to-r from-pink-400 to-white">
+        <div className="container mx-auto ">
+        <h1 className="text-6xl font-bold mb-8 text-black text-center uppercase font-new-bold">
+          Here are our heroes</h1>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
             {teamData.map(({ img, name, position, socials }) => (
+              <div
+              key={name}
+              className="transform hover:bg-gray-200 transition duration-300 ease-in-out"
+              >
               <TeamCard
-                key={name}
                 img={img}
-                name={name}
+                name={name.toUpperCase()}
                 position={position}
                 socials={
                   <div className="flex items-center gap-2">
                     {socials.map(({ color, name }) => (
                       <IconButton key={name} color={color} variant="text">
-                        <i className={`fa-brands text-lg fa-${name}`} />
+                        <i className={`fa-brands text-2xl fa-${name}`} />
                       </IconButton>
                     ))}
                   </div>
                 }
               />
-            ))}
           </div>
+            ))}
+        </div>
         </div>
       </section>
       <section className="relative bg-blue-gray-50/50 py-24 px-4">
