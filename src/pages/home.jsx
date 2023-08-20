@@ -13,6 +13,7 @@ import { UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
+import CardComponent from './CardComponent'; // Import the CardComponent from the same directory
 
 
 export function Home() {
@@ -70,86 +71,22 @@ export function Home() {
 </Typography>
 </div>
            
-<div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-  <Card className="shadow-lg shadow-gray-500/10 transform hover:scale-105 transition-transform duration-300">
-    <CardHeader className="relative h-56">
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img
-              alt="Card Image"
-              src="/img/teamwork.jpeg"
-              className="h-full w-full"
+<CardComponent
+              imageSrc="/img/teamwork.jpeg"
+              memberName="Shubhangi ji"
+              position="Lead"
             />
-          </div>
-          <div className="flip-card-back flex justify-center items-center">
-            <Typography
-              variant="h5"
-              color="blue-gray"
-              className="font-bold text-center"
-              style={{ color: '#880e4f' }}
-            >
-              Shubhangi
-            </Typography>
-          </div>
-        </div>
-      </div>
-    </CardHeader>
-    <CardBody>
-      <Typography
-        variant="h5"
-        color="blue-gray"
-        className="mb-3 font-bold text-center"
-        style={{ color: '#880e4f' }}
-      >
-        Lead: Shubhangi Mishra
-      </Typography>
-    </CardBody>
-  </Card>
-</div>
 
 
 
 
                 {/* end of the row */}
 
-                <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-  <Card className="shadow-lg shadow-gray-500/10 transform hover:scale-105 transition-transform duration-300">
-    <CardHeader className="relative h-56">
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img
-              alt="Card Image"
-              src="/img/teamwork.jpeg"
-              className="h-full w-full"
+                <CardComponent
+              imageSrc="/img/teamwork.jpeg"
+              memberName="Shubhangi ji"
+              position="Lead"
             />
-          </div>
-          <div className="flip-card-back flex justify-center items-center">
-            <Typography
-              variant="h5"
-              color="blue-gray"
-              className="font-bold text-center"
-              style={{ color: '#880e4f' }}
-            >
-              Shubhangi
-            </Typography>
-          </div>
-        </div>
-      </div>
-    </CardHeader>
-    <CardBody>
-      <Typography
-        variant="h5"
-        color="blue-gray"
-        className="mb-3 font-bold text-center"
-        style={{ color: '#880e4f' }}
-      >
-        Lead: Shubhangi Mishra
-      </Typography>
-    </CardBody>
-  </Card>
-</div>
 
 
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
@@ -174,7 +111,7 @@ export function Home() {
                 {/* //end of the row */}
 
                 </div>
-          <div className="mt-32 flex flex-wrap items-center">
+          <div className="mt-8 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               
             <Typography
@@ -189,86 +126,21 @@ export function Home() {
 </Typography>
 </div>
            
-<div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-  <Card className="shadow-lg shadow-gray-500/10 transform hover:scale-105 transition-transform duration-300">
-    <CardHeader className="relative h-56">
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img
-              alt="Card Image"
-              src="/img/teamwork.jpeg"
-              className="h-full w-full"
+<CardComponent
+              imageSrc="/img/teamwork.jpeg"
+              memberName="Shubhangi ji"
+              position="Lead"
             />
-          </div>
-          <div className="flip-card-back flex justify-center items-center">
-            <Typography
-              variant="h5"
-              color="blue-gray"
-              className="font-bold text-center"
-              style={{ color: '#880e4f' }}
-            >
-              Shubhangi
-            </Typography>
-          </div>
-        </div>
-      </div>
-    </CardHeader>
-    <CardBody>
-      <Typography
-        variant="h5"
-        color="blue-gray"
-        className="mb-3 font-bold text-center"
-        style={{ color: '#880e4f' }}
-      >
-        Lead: Shubhangi Mishra
-      </Typography>
-    </CardBody>
-  </Card>
-</div>
-
 
           
 
 
                 {/* end of the row */}
-                <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-  <Card className="shadow-lg shadow-gray-500/10 transform hover:scale-105 transition-transform duration-300">
-    <CardHeader className="relative h-56">
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img
-              alt="Card Image"
-              src="/img/teamwork.jpeg"
-              className="h-full w-full"
+                <CardComponent
+              imageSrc="/img/teamwork.jpeg"
+              memberName="Shubhangi ji"
+              position="Lead"
             />
-          </div>
-          <div className="flip-card-back flex justify-center items-center">
-            <Typography
-              variant="h5"
-              color="blue-gray"
-              className="font-bold text-center"
-              style={{ color: '#880e4f' }}
-            >
-              Shubhangi
-            </Typography>
-          </div>
-        </div>
-      </div>
-    </CardHeader>
-    <CardBody>
-      <Typography
-        variant="h5"
-        color="blue-gray"
-        className="mb-3 font-bold text-center"
-        style={{ color: '#880e4f' }}
-      >
-        Lead: Shubhangi Mishra
-      </Typography>
-    </CardBody>
-  </Card>
-</div>
 
 
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
@@ -292,7 +164,7 @@ export function Home() {
             {/* end of the row */}
 
             </div>
-          <div className="mt-32 flex flex-wrap items-center">
+          <div className="mt-8 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               
             <Typography
@@ -307,84 +179,21 @@ export function Home() {
 </Typography>
 </div>
            
-<div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-  <Card className="shadow-lg shadow-gray-500/10 transform hover:scale-105 transition-transform duration-300">
-    <CardHeader className="relative h-56">
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img
-              alt="Card Image"
-              src="/img/teamwork.jpeg"
-              className="h-full w-full"
+<CardComponent
+              imageSrc="/img/teamwork.jpeg"
+              memberName="Shubhangi ji"
+              position="Lead"
             />
-          </div>
-          <div className="flip-card-back flex justify-center items-center">
-            <Typography
-              variant="h5"
-              color="blue-gray"
-              className="font-bold text-center"
-              style={{ color: '#880e4f' }}
-            >
-              Shubhangi
-            </Typography>
-          </div>
-        </div>
-      </div>
-    </CardHeader>
-    <CardBody>
-      <Typography
-        variant="h5"
-        color="blue-gray"
-        className="mb-3 font-bold text-center"
-        style={{ color: '#880e4f' }}
-      >
-        Lead: Shubhangi Mishra
-      </Typography>
-    </CardBody>
-  </Card>
-</div>
 
 
                 {/* end of the row */}
 
-                <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-  <Card className="shadow-lg shadow-gray-500/10 transform hover:scale-105 transition-transform duration-300">
-    <CardHeader className="relative h-56">
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img
-              alt="Card Image"
-              src="/img/teamwork.jpeg"
-              className="h-full w-full"
+                <CardComponent
+              imageSrc="/img/teamwork.jpeg"
+              memberName="Shubhangi ji"
+              position="Lead"
             />
-          </div>
-          <div className="flip-card-back flex justify-center items-center">
-            <Typography
-              variant="h5"
-              color="blue-gray"
-              className="font-bold text-center"
-              style={{ color: '#880e4f' }}
-            >
-              Shubhangi
-            </Typography>
-          </div>
-        </div>
-      </div>
-    </CardHeader>
-    <CardBody>
-      <Typography
-        variant="h5"
-        color="blue-gray"
-        className="mb-3 font-bold text-center"
-        style={{ color: '#880e4f' }}
-      >
-        Lead: Shubhangi Mishra
-      </Typography>
-    </CardBody>
-  </Card>
-</div>
+
 
 
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
@@ -400,14 +209,11 @@ export function Home() {
 <Typography className="mb-8 font-georgia text-blue-gray-500 flex items-center h-full">
   DevSource - The Development Group is a community of students highly enthusiastic about OpenSource, app, and Web Development. The club provides an opportunity for students with a common interest in development and open source to gather and develop together. DevSource organizes various events and workshops for the students to learn new technologies and build hands-on projects.
 </Typography>
-
-              
-              
               
             </div>
             {/* end of the row */}
             </div>
-          <div className="mt-32 flex flex-wrap items-center">
+          <div className="mt-8 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               
             <Typography
@@ -422,83 +228,20 @@ export function Home() {
 </Typography>
 </div>
            
-<div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-  <Card className="shadow-lg shadow-gray-500/10 transform hover:scale-105 transition-transform duration-300">
-    <CardHeader className="relative h-56">
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img
-              alt="Card Image"
-              src="/img/teamwork.jpeg"
-              className="h-full w-full"
+<CardComponent
+              imageSrc="/img/teamwork.jpeg"
+              memberName="Shubhangi ji"
+              position="Lead"
             />
-          </div>
-          <div className="flip-card-back flex justify-center items-center">
-            <Typography
-              variant="h5"
-              color="blue-gray"
-              className="font-bold text-center"
-              style={{ color: '#880e4f' }}
-            >
-              Shubhangi
-            </Typography>
-          </div>
-        </div>
-      </div>
-    </CardHeader>
-    <CardBody>
-      <Typography
-        variant="h5"
-        color="blue-gray"
-        className="mb-3 font-bold text-center"
-        style={{ color: '#880e4f' }}
-      >
-        Lead: Shubhangi Mishra
-      </Typography>
-    </CardBody>
-  </Card>
-</div>
+
 
 
                 {/* end of the row */}
-                <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-  <Card className="shadow-lg shadow-gray-500/10 transform hover:scale-105 transition-transform duration-300">
-    <CardHeader className="relative h-56">
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img
-              alt="Card Image"
-              src="/img/teamwork.jpeg"
-              className="h-full w-full"
+                <CardComponent
+              imageSrc="/img/teamwork.jpeg"
+              memberName="Shubhangi ji"
+              position="Lead"
             />
-          </div>
-          <div className="flip-card-back flex justify-center items-center">
-            <Typography
-              variant="h5"
-              color="blue-gray"
-              className="font-bold text-center"
-              style={{ color: '#880e4f' }}
-            >
-              Shubhangi
-            </Typography>
-          </div>
-        </div>
-      </div>
-    </CardHeader>
-    <CardBody>
-      <Typography
-        variant="h5"
-        color="blue-gray"
-        className="mb-3 font-bold text-center"
-        style={{ color: '#880e4f' }}
-      >
-        Lead: Shubhangi Mishra
-      </Typography>
-    </CardBody>
-  </Card>
-</div>
 
 
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
@@ -521,7 +264,7 @@ export function Home() {
             </div>
             {/* end of the row */}
             </div>
-          <div className="mt-32 flex flex-wrap items-center">
+          <div className="mt-8 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               
             <Typography
@@ -537,43 +280,11 @@ export function Home() {
 </div>
            
 
-<div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-  <Card className="shadow-lg shadow-gray-500/10 transform hover:scale-105 transition-transform duration-300">
-    <CardHeader className="relative h-56">
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img
-              alt="Card Image"
-              src="/img/teamwork.jpeg"
-              className="h-full w-full"
+<CardComponent
+              imageSrc="/img/teamwork.jpeg"
+              memberName="Shubhangi ji"
+              position="Lead"
             />
-          </div>
-          <div className="flip-card-back flex justify-center items-center">
-            <Typography
-              variant="h5"
-              color="blue-gray"
-              className="font-bold text-center"
-              style={{ color: '#880e4f' }}
-            >
-              Shubhangi
-            </Typography>
-          </div>
-        </div>
-      </div>
-    </CardHeader>
-    <CardBody>
-      <Typography
-        variant="h5"
-        color="blue-gray"
-        className="mb-3 font-bold text-center"
-        style={{ color: '#880e4f' }}
-      >
-        Lead: Shubhangi Mishra
-      </Typography>
-    </CardBody>
-  </Card>
-</div>
 
                 {/* end of the row */}
           </div>
