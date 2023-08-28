@@ -292,27 +292,39 @@ export function Home() {
         </div>
         
       </section>
-      <section className="px-4 pt-20 pb-48 bg-gradient-to-r from-pink-400 to-white">
+      <section className="px-4 pt-32 pb-32" style={{ backgroundImage: "url('/img/19110.jpg')", backgroundRepeat: "repeat" }}>
         <div className="container mx-auto ">
-        <h1 className="text-6xl font-bold mb-8 text-black text-center uppercase font-new-bold">
-          Here are our heroes</h1>
+        <h1 className="text-6xl font-bold mb-8 text-black text-center uppercase font-new-bold hover:text-black-600 transform transition-transform duration-300 ease-in-out hover:scale-110">
+          Meet our heroes</h1>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
             {teamData.map(({ img, name, position, socials }) => (
               <div
               key={name}
-              className="transform hover:bg-gray-200 transition duration-300 ease-in-out"
+              className="transform hover:bg-gray-200 hover:scale-105 hover:text-blue-600 transition-transform duration-300 ease-in-out"
               >
               <TeamCard
                 img={img}
-                name={name.toUpperCase()}
-                position={position}
+                name={<h2 className="text-2xl font-bold mb-2">{name.toUpperCase()}</h2>} 
+                position={<h2 className="text-xl font-semibold">{position}</h2>}
                 socials={
                   <div className="flex items-center gap-2">
-                    {socials.map(({ color, name }) => (
-                      <IconButton key={name} color={color} variant="text">
-                        <i className={`fa-brands text-2xl fa-${name}`} />
-                      </IconButton>
-                    ))}
+                  {socials.map(({ color, name, link }) => (
+                <IconButton
+                   key={name}
+                   color={color}
+                    variant="text"
+                  className="transform hover:text-gray-600 transition-transform duration-300 ease-in-out"
+                       >
+                    <a
+                  href={link}
+                  target="_blank"
+                   rel="noopener noreferrer"
+                     className={`text-${color}`}
+                     >
+                   <i className={`fa-brands text-3xl fa-${name}`} />
+                  </a>
+                  </IconButton>
+                   ))}
                   </div>
                 }
               />
