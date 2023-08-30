@@ -6,20 +6,22 @@ import {
 } from "@heroicons/react/24/solid";
 
 
+;
 export const featuresData = [
   {
-    color: "blue",
+    
     title: "Dr. Rahul Johari",
-    icon: StarIcon,
+    imgSrc:'/img/rahulsir.jpg',
     description:
-      "mentor description",
+      "Branch Mentor ACM-W",
   },
   {
-    color: "red",
+    
     title: "Dr. Khyati Chopra",
-    icon: ArrowPathIcon,
+    imgSrc:'/img/khyatimam.jpg',
+    
     description:
-      "mentor description",
+      "Branch Mentor ACM-W",
   },
   
 ];

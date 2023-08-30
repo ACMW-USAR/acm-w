@@ -41,14 +41,12 @@ export function Home() {
       <section className="-mt-32 bg-gray-50 px-4 pb-20 pt-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {featuresData.map(({ color, title, icon, description }) => (
+            {featuresData.map(({ title, imgSrc, description }) => (
               <FeatureCard
                 key={title}
-                color={color}
+
                 title={title}
-                icon={React.createElement(icon, {
-                  className: "w-5 h-5 text-white",
-                })}
+                imgSrc={imgSrc}
                 description={description}
               />
             ))}
@@ -56,7 +54,7 @@ export function Home() {
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
-                <UsersIcon className="h-6 w-6 text-blue-gray-900" />
+
               </div>
               <Typography
                 variant="h3"
@@ -75,7 +73,7 @@ export function Home() {
                 faster. You can change the text and images and you're good to
                 go. Just make sure you enable them first via JavaScript.
               </Typography>
-              <Button variant="outlined">read more</Button>
+
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <Card className="shadow-lg shadow-gray-500/10">
@@ -152,7 +150,7 @@ export function Home() {
               <Button variant="outlined">read more</Button>
             </div>
 
-            
+
           </div>
         </div>
       </section>
