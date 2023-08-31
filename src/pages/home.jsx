@@ -42,14 +42,12 @@ export function Home() {
       <section className="-mt-32 bg-gray-50 px-4 pb-20 pt-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {featuresData.map(({ color, title, icon, description }) => (
+            {featuresData.map(({ title, imgSrc, description }) => (
               <FeatureCard
                 key={title}
-                color={color}
+
                 title={title}
-                icon={React.createElement(icon, {
-                  className: "w-5 h-5 text-white",
-                })}
+                imgSrc={imgSrc}
                 description={description}
               />
             ))}
@@ -57,55 +55,27 @@ export function Home() {
           </div>
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
-              
-            <Typography
-  variant="h2"
-  className="mb-3 font-bold text-center"
-  style={{ fontFamily: 'Georgia', color: '#880e4f' }}
->
-  DevSource
-</Typography>
-
-<Typography className="mb-8 font-georgia text-blue-gray-500 flex items-center h-full">
-  DevSource - The Development Group is a community of students highly enthusiastic about OpenSource, app, and Web Development. The club provides an opportunity for students with a common interest in development and open source to gather and develop together. DevSource organizes various events and workshops for the students to learn new technologies and build hands-on projects.
-</Typography>
-</div>
-           
-<CardComponent
-              imageSrc="/img/teamwork.jpeg"
-              memberName="Shubhangi ji"
-              position="Lead"
-            />
-
-
-
-
-                {/* end of the row */}
-
-                <CardComponent
-              imageSrc="/img/teamwork.jpeg"
-              memberName="Shubhangi ji"
-              position="Lead"
-            />
-
-
-            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
-              
-            <Typography
-  variant="h2"
-  className="mb-3 font-bold text-center"
-  style={{ fontFamily: 'Georgia', color: '#880e4f' }}
->
-  DevSource
-</Typography>
-
-<Typography className="mb-8 font-georgia text-blue-gray-500 flex items-center h-full">
-  DevSource - The Development Group is a community of students highly enthusiastic about OpenSource, app, and Web Development. The club provides an opportunity for students with a common interest in development and open source to gather and develop together. DevSource organizes various events and workshops for the students to learn new technologies and build hands-on projects.
-</Typography>
-
-              
-              
-              
+              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
+                <UsersIcon className="h-6 w-6 text-blue-gray-900" />
+              </div>
+              <Typography
+                variant="h3"
+                className="mb-3 font-bold"
+                color="blue-gray"
+              >
+                Working with us is a pleasure
+              </Typography>
+              <Typography className="mb-8 font-normal text-blue-gray-500">
+                Don't let your uses guess by attaching tooltips and popoves to
+                any element. Just make sure you enable them first via
+                JavaScript.
+                <br />
+                <br />
+                The kit comes with three pre-built pages to help you get started
+                faster. You can change the text and images and you're good to
+                go. Just make sure you enable them first via JavaScript.
+              </Typography>
+              <Button variant="outlined">read more</Button>
             </div>
 
                 {/* //end of the row */}
@@ -215,78 +185,30 @@ export function Home() {
             </div>
           <div className="mt-8 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
-              
-            <Typography
-  variant="h2"
-  className="mb-3 font-bold text-center"
-  style={{ fontFamily: 'Georgia', color: '#880e4f' }}
->
-  DevSource
-</Typography>
-<Typography className="mb-8 font-georgia text-blue-gray-500 flex items-center h-full">
-  DevSource - The Development Group is a community of students highly enthusiastic about OpenSource, app, and Web Development. The club provides an opportunity for students with a common interest in development and open source to gather and develop together. DevSource organizes various events and workshops for the students to learn new technologies and build hands-on projects.
-</Typography>
-</div>
-           
-<CardComponent
-              imageSrc="/img/teamwork.jpeg"
-              memberName="Shubhangi ji"
-              position="Lead"
-            />
-
-
-
-                {/* end of the row */}
-                <CardComponent
-              imageSrc="/img/teamwork.jpeg"
-              memberName="Shubhangi ji"
-              position="Lead"
-            />
-
-
-            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
-              
-            <Typography
-  variant="h2"
-  className="mb-3 font-bold text-center"
-  style={{ fontFamily: 'Georgia', color: '#880e4f' }}
->
-  DevSource
-</Typography>
-
-<Typography className="mb-8 font-georgia text-blue-gray-500 flex items-center h-full">
-  DevSource - The Development Group is a community of students highly enthusiastic about OpenSource, app, and Web Development. The club provides an opportunity for students with a common interest in development and open source to gather and develop together. DevSource organizes various events and workshops for the students to learn new technologies and build hands-on projects.
-</Typography>
-
-              
-              
-              
+              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
+                <UsersIcon className="h-6 w-6 text-blue-gray-900" />
+              </div>
+              <Typography
+                variant="h3"
+                className="mb-3 font-bold"
+                color="blue-gray"
+              >
+                Working with us is a pleasure
+              </Typography>
+              <Typography className="mb-8 font-normal text-blue-gray-500">
+                Don't let your uses guess by attaching tooltips and popoves to
+                any element. Just make sure you enable them first via
+                JavaScript.
+                <br />
+                <br />
+                The kit comes with three pre-built pages to help you get started
+                faster. You can change the text and images and you're good to
+                go. Just make sure you enable them first via JavaScript.
+              </Typography>
+              <Button variant="outlined">read more</Button>
             </div>
-            {/* end of the row */}
-            </div>
-          <div className="mt-8 flex flex-wrap items-center">
-            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
-              
-            <Typography
-  variant="h2"
-  className="mb-3 font-bold text-center"
-  style={{ fontFamily: 'Georgia', color: '#880e4f' }}
->
-  DevSource
-</Typography>
-<Typography className="mb-8 font-georgia text-blue-gray-500 flex items-center h-full">
-  DevSource - The Development Group is a community of students highly enthusiastic about OpenSource, app, and Web Development. The club provides an opportunity for students with a common interest in development and open source to gather and develop together. DevSource organizes various events and workshops for the students to learn new technologies and build hands-on projects.
-</Typography>
-</div>
-           
 
-<CardComponent
-              imageSrc="/img/teamwork.jpeg"
-              memberName="Shubhangi ji"
-              position="Lead"
-            />
-
-                {/* end of the row */}
+            
           </div>
          
         </div>

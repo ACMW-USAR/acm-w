@@ -1,3 +1,4 @@
+
 import {
   StarIcon,
   ArrowPathIcon,
@@ -5,28 +6,24 @@ import {
 } from "@heroicons/react/24/solid";
 
 
+;
 export const featuresData = [
   {
-    color: "blue",
-    title: "Rahul Johari",
-    icon: StarIcon,
+    
+    title: "Dr. Rahul Johari",
+    imgSrc:'/img/rahulsir.jpg',
     description:
-      "mentor description",
+      "Branch Mentor ACM-W",
   },
   {
-    color: "red",
-    title: "Free Revisions",
-    icon: ArrowPathIcon,
+    
+    title: "Dr. Khyati Chopra",
+    imgSrc:'/img/khyatimam.jpg',
+    
     description:
-      "Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.",
+      "Branch Mentor ACM-W",
   },
-  {
-    color: "teal",
-    title: "Verified Company",
-    icon: FingerPrintIcon,
-    description:
-      "Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!",
-  },
+  
 ];
 
 export default featuresData;
