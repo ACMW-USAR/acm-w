@@ -14,7 +14,7 @@ import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
 import CardComponent from './CardComponent'; // Import the CardComponent from the same directory
-
+import "./events.css";
 
 export function Home() {
   return (
@@ -321,18 +321,81 @@ export function Home() {
         </div>
         </div>
       </section>
-      <section className="relative bg-blue-gray-50/50 py-24 px-4">
+      {<section className="px-4 pt-20 pb-48 bg-gradient-to-r from-gray to-black"style={{ backgroundImage: "url('public/img/WhatsApp Image 2023-09-01 at 23.35.09.jpeg')", backgroundRepeat: "repeat" }}>
         <div className="container mx-auto">
-          <PageTitle heading="Build something">
-            Put the potentially record low maximum sea ice extent tihs year down
-            to low ice. According to the National Oceanic and Atmospheric
-            Administration, Ted, Scambos.
+
+          <PageTitle heading="EVENTS">
+            Reflecting on significant past events by ACM-W.
           </PageTitle>
-          <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
+          
+          <div className="outer-box">
+          <div className="box mt-8">
+  
+            <div className="all-box">
+              <div
+                className="left">
+                <img src="public/img/WhatsApp Image 2023-08-27 at 22.00.55.jpeg" alt="dapps.co & hutlers.in" />
+                
+              </div>
+
+              <div className="right transition-transform hover:scale-105">
+              <span class="text-1xl font-bold"><p>Journey into deccentraliazation world & careers </p></span>
+              <p class="text-black transition-colors duration-300 hover:text-gray-700"><br />
+    <span class="block">A tech seminar in association with dapps.co & hustlers.in</span><br />
+
+    <span class="block">DATE - 26 June 2023</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="box mt-8">
+            <div className="all-box">
+              <div
+                className="left">
+                <img src="public/img/WhatsApp Image 2023-08-27 at 22.01.44.jpeg" alt="CARVAAN" />
+              </div>
+
+              <div className="right transition-transform hover:scale-105" >
+              <span class="text-1xl font-bold"><p>CARVAAN cultural event (PRAVEGA) </p></span>
+              <p class="text-black transition-colors duration-300 hover:text-gray-700"><br />
+    <span class="block">By IISC BANGALORE</span><br />
+
+    <span class="block">DATE-10nth June 2023</span></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="box mt-8">
+            <div className="all-box">
+              <div
+                className="left">
+                <img src="public/img/WhatsApp Image 2023-08-27 at 22.01.08.jpeg" alt="Xploring Matlab" />
+              </div>
+
+              <div className="right transition-transform hover:scale-105">
+              <span class="text-1xl font-bold"><p>XPLORING MATLAB </p></span>
+              <p class="text-black transition-colors duration-300 hover:text-gray-700"><br />
+    <span class="block">With Mr. Manoj Kumar,Sr. Application Engineer at Design Tech System Pvt.Ltd</span><br />
+
+    <span class="block">DATE-05 June 2023</span></p>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </section>
+      /* <section className="relative bg-blue-gray-50/50 py-24 px-4">
+        <div className="container mx-auto h-100 w-100">
+          <PageTitle heading="PAST EVENTS">
+            Reflecting on significant past events by ACM-W.
+          </PageTitle>
+          <div className="mx-auto mt-10 mb-24  grid grid-cols-1 gap-20  md:grid-cols-2 lg:grid-cols-3" 
+>
+
             {contactData.map(({ title, icon, description }) => (
               <Card
                 key={title}
-                color="transparent"
+                color="pink"
                 shadow={false}
                 className="text-center text-blue-gray-900"
               >
@@ -350,6 +413,9 @@ export function Home() {
               </Card>
             ))}
           </div>
+          </div>
+      </section> */}
+      
           <PageTitle heading="Want to work with us?">
             Complete this form and we will get back to you in 24 hours.
           </PageTitle>
@@ -363,8 +429,6 @@ export function Home() {
               Send Message
             </Button>
           </form>
-        </div>
-      </section>
       <div className="bg-blue-gray-50/50">
         <Footer />
       </div>
