@@ -11,7 +11,7 @@ function CardComponent({ imageSrc, memberName, position }) {
     <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
       <Card className="shadow-lg shadow-gray-500/10 transform hover:scale-105 transition-transform duration-300">
         <CardHeader className="relative h-56">
-          <div className="flip-card">
+          <div className="flip-card" style={{ overflow: 'hidden' }}> {/* Add overflow: hidden here */}
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img
@@ -27,7 +27,7 @@ function CardComponent({ imageSrc, memberName, position }) {
                   className="font-bold text-center"
                   style={{ color: '#880e4f' }}
                 >
-                  {memberName}
+                  {position}
                 </Typography>
               </div>
             </div>
@@ -40,7 +40,7 @@ function CardComponent({ imageSrc, memberName, position }) {
             className="mb-3 font-bold text-center"
             style={{ color: '#880e4f' }}
           >
-            {`Lead: ${memberName} ${position}`}
+            {`Lead: ${memberName}`}
           </Typography>
         </CardBody>
       </Card>

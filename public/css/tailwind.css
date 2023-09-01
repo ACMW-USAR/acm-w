@@ -10,3 +10,12 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 } */
+
+/* styles.css */
+
+.bg-image {
+    background-image: url('public/img/clubs bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  

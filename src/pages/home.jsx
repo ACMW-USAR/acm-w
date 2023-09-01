@@ -39,7 +39,8 @@ export function Home() {
           </div>
         </div>
       </div>
-      <section className="-mt-32 bg-gray-50 px-4 pb-20 pt-4">
+      
+      <section className="-mt-32 bg-gray-50 px-4 pb-20 pt-4 bg-image">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {featuresData.map(({ title, imgSrc, description }) => (
@@ -55,6 +56,7 @@ export function Home() {
           </div>
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
+<<<<<<< HEAD
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
                 <UsersIcon className="h-6 w-6 text-blue-gray-900" />
               </div>
@@ -76,6 +78,62 @@ export function Home() {
                 go. Just make sure you enable them first via JavaScript.
               </Typography>
               <Button variant="outlined">read more</Button>
+=======
+              
+            <Typography
+  variant="h2"
+  className="mb-3 font-bold text-center"
+  style={{ fontFamily: 'Georgia', color: '#880e4f' }}
+>
+Research cell
+</Typography>
+
+<Typography className="mb-8 font-georgia text-blue-gray-500 flex items-center h-full">
+The ACM-W Research Cell at USAR College is a dynamic hub for students to engage in cutting-edge research 
+across various domains of computer science. Embracing diversity and inclusion, the cell empowers students through hands-on 
+experiences and align their research with real-world industry challenges. 
+</Typography>
+</div>
+           
+<CardComponent
+              imageSrc="/img/research.jpeg.jpg"
+              memberName="Shubhangi Mishra"
+              position="Lead"
+            />
+
+
+
+
+                {/* end of the row */}
+
+                <CardComponent
+              imageSrc="/img/icpc.jpeg.jpg"
+              memberName="Sia Gupta"
+              position="Lead"
+            />
+
+
+            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
+              
+            <Typography
+  variant="h2"
+  className="mb-3 font-bold text-center"
+  style={{ fontFamily: 'Georgia', color: '#880e4f' }}
+>
+
+ICPC
+</Typography>
+
+<Typography className="mb-8 font-georgia text-blue-gray-500 flex items-center h-full">
+Immerse yourself in the dynamic world of competitive programming through the ICPC chapter at ACM-W USAR. 
+Enhance critical thinking, problem-solving, and algorithmic mastery by participating in thrilling coding 
+challenges. Connect with a vibrant community of programmers.
+</Typography>
+
+              
+              
+              
+>>>>>>> clubs
             </div>
 
                 {/* //end of the row */}
@@ -89,16 +147,18 @@ export function Home() {
   className="mb-3 font-bold text-center"
   style={{ fontFamily: 'Georgia', color: '#880e4f' }}
 >
-  DevSource
+  Innovate AI
 </Typography>
 <Typography className="mb-8 font-georgia text-blue-gray-500 flex items-center h-full">
-  DevSource - The Development Group is a community of students highly enthusiastic about OpenSource, app, and Web Development. The club provides an opportunity for students with a common interest in development and open source to gather and develop together. DevSource organizes various events and workshops for the students to learn new technologies and build hands-on projects.
+Innovative AI at ACM-W USAR College emerges as a dynamic nucleus, propelling students towards the forefront 
+of AI exploration across various domains. Fueled by diversity and inclusion, Innovative AI empowers individuals 
+from all backgrounds to harness their intellectual curiosity and contribute to transformative projects. 
 </Typography>
 </div>
            
 <CardComponent
-              imageSrc="/img/teamwork.jpeg"
-              memberName="Shubhangi ji"
+              imageSrc="/img/ai.jpeg.jpg"
+              memberName="Tejasvi Arneja"
               position="Lead"
             />
 
@@ -107,8 +167,8 @@ export function Home() {
 
                 {/* end of the row */}
                 <CardComponent
-              imageSrc="/img/teamwork.jpeg"
-              memberName="Shubhangi ji"
+              imageSrc="/img/robo.jpg"
+              memberName="Priyasvi Sharma"
               position="Lead"
             />
 
@@ -120,11 +180,13 @@ export function Home() {
   className="mb-3 font-bold text-center"
   style={{ fontFamily: 'Georgia', color: '#880e4f' }}
 >
-  DevSource
+RobIOTics
 </Typography>
 
 <Typography className="mb-8 font-georgia text-blue-gray-500 flex items-center h-full">
-  DevSource - The Development Group is a community of students highly enthusiastic about OpenSource, app, and Web Development. The club provides an opportunity for students with a common interest in development and open source to gather and develop together. DevSource organizes various events and workshops for the students to learn new technologies and build hands-on projects.
+RobIOTics, a vibrant division of ACM-W at USAR College, unites the worlds of robotics, information technology 
+(IT), and robotic process automation. Our goal is to cultivate a strong electronic community by sharing insights 
+and hosting events that delve into these cutting-edge fields.
 </Typography>
 
               
@@ -145,13 +207,15 @@ export function Home() {
   DevSource
 </Typography>
 <Typography className="mb-8 font-georgia text-blue-gray-500 flex items-center h-full">
-  DevSource - The Development Group is a community of students highly enthusiastic about OpenSource, app, and Web Development. The club provides an opportunity for students with a common interest in development and open source to gather and develop together. DevSource organizes various events and workshops for the students to learn new technologies and build hands-on projects.
+ACM-W USAR's DevSource stands as a dynamic haven, propelling students into the forefront of computer science 
+exploration. Rooted in diversity and inclusivity, Dev Source emboldens students of every background to pursue 
+their inquisitiveness and contribute to impactful ventures. 
 </Typography>
 </div>
            
 <CardComponent
-              imageSrc="/img/teamwork.jpeg"
-              memberName="Shubhangi ji"
+              imageSrc="/img/devsource.jpeg"
+              memberName="Khushbu Rai"
               position="Lead"
             />
 
@@ -159,8 +223,8 @@ export function Home() {
                 {/* end of the row */}
 
                 <CardComponent
-              imageSrc="/img/teamwork.jpeg"
-              memberName="Shubhangi ji"
+              imageSrc="/img/cyberchain.jpeg.jpg"
+              memberName="------"
               position="Lead"
             />
 
@@ -173,18 +237,21 @@ export function Home() {
   className="mb-3 font-bold text-center"
   style={{ fontFamily: 'Georgia', color: '#880e4f' }}
 >
-  DevSource
+CyberChain
 </Typography>
 
 <Typography className="mb-8 font-georgia text-blue-gray-500 flex items-center h-full">
-  DevSource - The Development Group is a community of students highly enthusiastic about OpenSource, app, and Web Development. The club provides an opportunity for students with a common interest in development and open source to gather and develop together. DevSource organizes various events and workshops for the students to learn new technologies and build hands-on projects.
-</Typography>
-              
+CyberChain, a vital arm of ACM at USAR, focuses on cryptography, cybersecurity, and blockchain. We believe in
+ proactive education, imparting cybersecurity knowledge to children and equipping them to navigate the digital 
+ realm safely. Through hands-on learning, we nurture expertise in cryptography and blockchain, laying a robust foundation for students. 
+              </Typography>
             </div>
+
             {/* end of the row */}
             </div>
           <div className="mt-8 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
+<<<<<<< HEAD
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
                 <UsersIcon className="h-6 w-6 text-blue-gray-900" />
               </div>
@@ -209,6 +276,87 @@ export function Home() {
             </div>
 
             
+=======
+              
+            <Typography
+  variant="h2"
+  className="mb-3 font-bold text-center"
+  style={{ fontFamily: 'Georgia', color: '#880e4f' }}
+>
+Canvas
+</Typography>
+<Typography className="mb-8 font-georgia text-blue-gray-500 flex items-center h-full">
+Within ACM-W USAR College, Canvas serves as an interactive masterpiece, guiding students through a dynamic 
+learning journey. Rooted in accessibility, Canvas empowers learners of all backgrounds to engage with educational
+ content seamlessly, fostering a collaborative environment. 
+</Typography>
+</div>
+           
+<CardComponent
+              imageSrc="/img/canvas.jpg"
+              memberName="Vanshika Gupta"
+              position="Lead"
+            />
+
+
+
+                {/* end of the row */}
+                <CardComponent
+              imageSrc="/img/game.jpeg.jpg"
+              memberName="-------"
+              position="Lead"
+            />
+
+
+            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
+              
+            <Typography
+  variant="h2"
+  className="mb-3 font-bold text-center"
+  style={{ fontFamily: 'Georgia', color: '#880e4f' }}
+>
+  enGame
+</Typography>
+
+<Typography className="mb-8 font-georgia text-blue-gray-500 flex items-center h-full">
+EnGame at ACM-W USAR College stands as a spirited arena, propelling students towards the forefront of game
+ development and design. Rooted in inclusivity, EnGame empowers individuals from diverse backgrounds to unleash 
+ their creative passion and contribute to immersive gaming projects. 
+</Typography>
+
+              
+              
+              
+            </div>
+            {/* end of the row */}
+            </div>
+          <div className="mt-8 flex flex-wrap items-center">
+            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
+              
+            <Typography
+  variant="h2"
+  className="mb-3 font-bold text-center"
+  style={{ fontFamily: 'Georgia', color: '#880e4f' }}
+>
+Lens
+</Typography>
+<Typography className="mb-8 font-georgia text-blue-gray-500 flex items-center h-full">
+Lens at ACM-W USAR College serves as a vibrant focal point, guiding students into the realm of advanced research
+ across diverse fields of computer science. Embracing inclusivity, Lens empowers individuals from diverse 
+ backgrounds to nurture their intellectual inquisitiveness and actively contribute to transformative undertakings.
+ 
+</Typography>
+</div>
+           
+
+<CardComponent
+              imageSrc="/img/lens.jpg"
+              memberName="------"
+              position="Lead"
+            />
+
+                {/* end of the row */}
+>>>>>>> clubs
           </div>
          
         </div>
