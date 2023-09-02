@@ -18,4 +18,46 @@
     background-size: cover;
     background-position: center;
   }
+
+  .box{
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    color: #070000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.all-box{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    width: 250px;
+    background: grey;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.right{
+   width: 40%;
+    height: 80%;
+    background:pink;
+    border-radius: 5px;
+   
+    margin-left: -30px;
+    padding: 12px;
+    letter-spacing: .1em;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+
+.outer-box{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
   
