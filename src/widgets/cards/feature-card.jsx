@@ -15,16 +15,19 @@ export function FeatureCard({ imgSrc, title, description }) {
   return (
 
 
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center ">
 
 
 
       <Card className={`rounded-2xl shadow-lg shadow-gray-500/10 ${gradientClass}`}
         style={{
-          width: "280px", // Change the width here
-          height: "300px",
+          width: "450px", // Change the width here
+          height: "250px",
           margin: "90px",
-          backgroundImage: "url('/img/pink2.jpg')"
+          backgroundImage: "url('/img/OIP.jpeg')",
+          background:"cover",
+          
+          // backgroundColor:"white"
         }}>
 
         <div className={transitionClass}></div>
@@ -34,13 +37,13 @@ export function FeatureCard({ imgSrc, title, description }) {
 
 
 
-          <img src={imgSrc}></img>
-          <Typography variant="h5" className="mb-2" color="blue-gray">
-            {title}
-          </Typography>
-          <Typography className="font-normal text-blue-gray-600">
-            {description}
-          </Typography>
+        <div className="flex">
+      <img src={imgSrc} alt={title} className="w-1/2" />
+      <div className="w-1/2 p-10">
+        <h2 className="text-lg font-semibold">{title}</h2>
+        <p className="text-sm">{description}</p>
+      </div>
+    </div>
         </CardBody>
       </Card>
     </div>

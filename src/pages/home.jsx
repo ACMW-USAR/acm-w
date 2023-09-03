@@ -42,18 +42,26 @@ export function Home() {
         </div>
       </div>
 
+      {/* ***** mentors***** */}
+
       <section className="bg-image -mt-32 bg-gray-50 px-4 pb-20 pt-4">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1  grid-cols-2">
             {featuresData.map(({ title, imgSrc, description }) => (
-              <FeatureCard
+              <FeatureCard 
                 key={title}
                 title={title}
                 imgSrc={imgSrc}
                 description={description}
+                
               />
             ))}
           </div>
+      
+          
+      
+          {/* *****clubs section ****** */}
+
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <Typography
@@ -76,17 +84,16 @@ export function Home() {
             <CardComponent
               imageSrc="/img/research.jpeg.jpg"
               memberName="Shubhangi Mishra"
-              position="Lead"
             />
+          </div>
 
-            {/* end of the row */}
+          {/* end of the row */}
 
+          <div className="mt-32 flex flex-wrap items-center">
             <CardComponent
               imageSrc="/img/icpc.jpeg.jpg"
               memberName="Sia Gupta"
-              position="Lead"
             />
-
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"
@@ -104,9 +111,10 @@ export function Home() {
                 vibrant community of programmers.
               </Typography>
             </div>
-
-            {/* //end of the row */}
           </div>
+
+          {/* //end of the row */}
+
           <div className="mt-8 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <Typography
@@ -129,16 +137,15 @@ export function Home() {
             <CardComponent
               imageSrc="/img/ai.jpeg.jpg"
               memberName="Tejasvi Arneja"
-              position="Lead"
             />
+          </div>
+          {/* end of the row */}
 
-            {/* end of the row */}
+          <div className="mt-8 flex flex-wrap items-center">
             <CardComponent
               imageSrc="/img/robo.jpg"
               memberName="Priyasvi Sharma"
-              position="Lead"
             />
-
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"
@@ -156,8 +163,10 @@ export function Home() {
                 these cutting-edge fields.
               </Typography>
             </div>
-            {/* end of the row */}
           </div>
+
+          {/* end of the row */}
+
           <div className="mt-8 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <Typography
@@ -177,19 +186,18 @@ export function Home() {
             </div>
 
             <CardComponent
-              imageSrc="/img/devsource.jpeg"
+              imageSrc="/img/devsource.jpg"
               memberName="Khushbu Rai"
-              position="Lead"
             />
 
             {/* end of the row */}
+          </div>
 
+          <div className="mt-8 flex flex-wrap items-center">
             <CardComponent
               imageSrc="/img/cyberchain.jpeg.jpg"
               memberName="------"
-              position="Lead"
             />
-
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"
@@ -208,9 +216,9 @@ export function Home() {
                 blockchain, laying a robust foundation for students.
               </Typography>
             </div>
-
-            {/* end of the row */}
           </div>
+
+          {/* end of the row */}
           <div className="mt-8 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <Typography
@@ -232,16 +240,13 @@ export function Home() {
             <CardComponent
               imageSrc="/img/canvas.jpg"
               memberName="Vanshika Gupta"
-              position="Lead"
             />
+          </div>
 
-            {/* end of the row */}
-            <CardComponent
-              imageSrc="/img/game.jpeg.jpg"
-              memberName="-------"
-              position="Lead"
-            />
+          {/* end of the row */}
 
+          <div className="mt-8 flex flex-wrap items-center">
+            <CardComponent imageSrc="/img/game.jpeg.jpg" memberName="-------" />
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"
@@ -259,8 +264,8 @@ export function Home() {
                 contribute to immersive gaming projects.
               </Typography>
             </div>
-            {/* end of the row */}
           </div>
+          {/* end of the row */}
           <div className="mt-8 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <Typography
@@ -285,9 +290,8 @@ export function Home() {
               memberName="------"
               position="Lead"
             />
-
-            {/* end of the row */}
           </div>
+          {/* end of the row */}
         </div>
       </section>
       <section
@@ -344,129 +348,153 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="px-4 pt-20 pb-48 bg-gradient-to-r from-gray to-black"style={{ backgroundImage: "url('public/img/WhatsApp Image 2023-09-01 at 23.35.09.jpeg')", backgroundRepeat: "repeat" }}>
+      <section
+        className="from-gray bg-gradient-to-r to-black px-4 pb-48 pt-20"
+        style={{ backgroundColor: "white", backgroundRepeat: "repeat" }}
+      >
         <div className="container mx-auto">
-
           <PageTitle heading="EVENTS">
             Reflecting on significant past events by ACM-W.
           </PageTitle>
-          
-          <div className="outer-box">
-          <div className="box mt-8">
-  
-            <div className="all-box">
-              <div
-                className="left">
-                <img src="public/img/WhatsApp Image 2023-08-27 at 22.00.55.jpeg" alt="dapps.co & hutlers.in" />
-                
-              </div>
+          <br></br>
 
-              <div className="right transition-transform hover:scale-105">
-              <span class="text-1xl font-bold"><p>Journey into deccentraliazation world & careers </p></span>
-              <p class="text-black transition-colors duration-300 hover:text-gray-700"><br />
-    <span class="block">A tech seminar in association with dapps.co & hustlers.in</span><br />
+          <div className="b-container">
+            <div className="box mt-8">
+              <div className="b-card-container">
+                <div className="b-card">
+                  <img
+                    src="public/img/WhatsApp Image 2023-08-27 at 22.00.55.jpeg"
+                    alt="dapps.co & hutlers.in"
+                  />
 
-    <span class="block">DATE - 26 June 2023</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="box mt-8">
-            <div className="all-box">
-              <div
-                className="left">
-                <img src="public/img/WhatsApp Image 2023-08-27 at 22.01.44.jpeg" alt="CARVAAN" />
-              </div>
+                  <div className="b-infos transition-transform hover:scale-105">
+                    <span class="b-text text-center font-bold">
+                      <p>Journey into deccentraliazation world & careers </p>
+                    </span>
+                    <p class="text-center transition-colors duration-300 hover:text-gray-700">
+                      <br />
+                      <span class="block">
+                        A tech seminar in association with dapps.co &
+                        hustlers.in
+                      </span>
+                      <br />
 
-              <div className="right transition-transform hover:scale-105" >
-              <span class="text-1xl font-bold"><p>CARVAAN cultural event (PRAVEGA) </p></span>
-              <p class="text-black transition-colors duration-300 hover:text-gray-700"><br />
-    <span class="block">By IISC BANGALORE</span><br />
-
-    <span class="block">DATE-10nth June 2023</span></p>
-                
+                      <span class="block">DATE - 26 June 2023</span>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="box mt-8">
-            <div className="all-box">
-              <div
-                className="left">
-                <img src="public/img/WhatsApp Image 2023-08-27 at 22.01.08.jpeg" alt="Xploring Matlab" />
-              </div>
+            <div class="box mt-8">
+              <div className="b-card-container">
+                <div className="b-card">
+                  <img
+                    src="public/img/WhatsApp Image 2023-08-27 at 22.01.44.jpeg"
+                    alt="CARVAAN"
+                  />
 
-              <div className="right transition-transform hover:scale-105">
-              <span class="text-1xl font-bold"><p>XPLORING MATLAB </p></span>
-              <p class="text-black transition-colors duration-300 hover:text-gray-700"><br />
-    <span class="block">With Mr. Manoj Kumar,Sr. Application Engineer at Design Tech System Pvt.Ltd</span><br />
+                  <div className="b-infos transition-transform hover:scale-105">
+                    <span class="text-center font-bold">
+                      <p>
+                        CARVAAN cultural event <br></br>(PRAVEGA){" "}
+                      </p>
+                    </span>
+                    <p class="text-center transition-colors duration-300 hover:text-gray-700">
+                      <br />
+                      <span class="block">By IISC BANGALORE</span>
+                      <br />
 
-    <span class="block">DATE-05 June 2023</span></p>
+                      <span class="block">DATE-10 June 2023</span>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="box mt-8">
+              <div className="b-card-container">
+                <div className="b-card">
+                  <img
+                    src="public/img/WhatsApp Image 2023-08-27 at 22.01.08.jpeg"
+                    alt="Xploring Matlab"
+                  />
 
+                  <div className="b-infos transition-transform hover:scale-105">
+                    <span class="text-center font-bold">
+                      <p>XPLORING MATLAB </p>
+                    </span>
+                    <p class="text-center transition-colors duration-300 hover:text-gray-700">
+                      <br />
+                      <span class="block">
+                        With Mr. Manoj Kumar,Sr. Application Engineer at Design
+                        Tech System Pvt.Ltd
+                      </span>
+                      <br />
+
+                      <span class="block">DATE-05 June 2023</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-          <section
-            className="relative"
-            style={{
-              backgroundImage:
-                "url(https://user-images.githubusercontent.com/88860081/129482195-66030814-527a-46b7-a09d-780ca3626f4a.gif)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
+      <section
+        className="relative"
+        style={{
+          backgroundImage:
+            "url(https://user-images.githubusercontent.com/88860081/129482195-66030814-527a-46b7-a09d-780ca3626f4a.gif)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-white bg-opacity-10"></div>
+        <div className="relative z-10"></div>
+        <PageTitle heading="Want to work with us?">
+          Complete this form and we will get back to you in 24 hours.
+        </PageTitle>
+        <form className="text-white-700 mx-auto mt-12 max-w-3xl bg-transparent text-center">
+          <div className="mb-8 flex gap-8">
+            <Input
+              variant="standard"
+              size="lg"
+              label={<span className="text-pink-500">Full Name</span>}
+            />
+            <Input
+              variant="standard"
+              size="lg"
+              label={<span className="text-pink-500">Email Address</span>}
+              onBlur={validate}
+            />
+            <Input
+              variant="standard"
+              size="lg"
+              label={<span className="text-pink-500">Year</span>}
+            />
+            <Input
+              variant="standard"
+              size="lg"
+              label={<span className="text-pink-500">Branch</span>}
+            />
+          </div>
+
+          <Textarea
+            variant="standard"
+            size="lg"
+            label={<span className="text-pink-500">Any message for us?</span>}
+            rows={8}
+          />
+
+          <Button
+            variant="gradient"
+            size="lg"
+            className="mt-8 bg-pink-500 bg-gradient-to-tr from-pink-600 to-pink-400 text-white shadow-md shadow-pink-500/20 hover:bg-pink-600  hover:shadow-lg hover:shadow-pink-500/40"
           >
-            <div className="absolute inset-0 bg-white bg-opacity-10"></div>
-            <div className="relative z-10"></div>
-            <PageTitle heading="Want to work with us?">
-              Complete this form and we will get back to you in 24 hours.
-            </PageTitle>
-            <form className="text-white-700 mx-auto mt-12 max-w-3xl bg-transparent text-center">
-              <div className="mb-8 flex gap-8">
-                <Input
-                  variant="standard"
-                  size="lg"
-                  label={<span className="text-pink-500">Full Name</span>}
-                />
-                <Input
-                  variant="standard"
-                  size="lg"
-                  label={<span className="text-pink-500">Email Address</span>}
-                  onBlur={validate}
-                />
-                <Input
-                  variant="standard"
-                  size="lg"
-                  label={<span className="text-pink-500">Year</span>}
-                />
-                <Input
-                  variant="standard"
-                  size="lg"
-                  label={<span className="text-pink-500">Branch</span>}
-                />
-              </div>
+            Register
+          </Button>
+        </form>
+      </section>
 
-              <Textarea
-                variant="standard"
-                size="lg"
-                label={
-                  <span className="text-pink-500">Any message for us?</span>
-                }
-                rows={8}
-              />
-
-              <Button
-                variant="gradient"
-                size="lg"
-                className="mt-8 bg-pink-500 bg-gradient-to-tr from-pink-600 to-pink-400 text-white shadow-md shadow-pink-500/20 hover:bg-pink-600  hover:shadow-lg hover:shadow-pink-500/40"
-                
-              >
-                Register
-              </Button>
-            </form>
-          </section>
-        
-      
       <div className="bg-blue-gray-50/50">
         <Footer />
       </div>
