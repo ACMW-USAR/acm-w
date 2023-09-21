@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import {
   Navbar as MTNavbar,
   MobileNav,
@@ -21,8 +22,8 @@ export function Navbar({ brandName, logo,routes, action }) {
   }, []);
 
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 text-inherit lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      {routes.map(({ name, path, icon, href, target }) => (
+    <ul className="mb-4 mt-2 flex flex-col gap-2 text-inherit lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 static">
+      {/* {routes.map(({ name, path, icon, href, target }) => (
         <Typography
           key={name}
           as="li"
@@ -56,12 +57,20 @@ export function Navbar({ brandName, logo,routes, action }) {
             </Link>
           )}
         </Typography>
-      ))}
+        
+      ))} */}
+      <li><Link to="home" spy={true} smooth={true} duration={500}>Home</Link></li>
+          <li><Link to="club" spy={true} smooth={true} duration={500}>Clubs</Link></li>
+          <li><Link to="team" spy={true} smooth={true} duration={500}>Team </Link></li>
+          <li><Link to="event" spy={true} smooth={true} duration={500}>Event </Link></li>
+          <li><Link to="joinus" spy={true} smooth={true} duration={500}>JoinUs </Link></li>
+          <li><Link to="footermain" spy={true} smooth={true} duration={500}> </Link></li>
+       
     </ul>
   );
 
   return (
-    <MTNavbar color="transparent" className="p-3">
+    <MTNavbar color="transparent" className="p-3 ">
       <div className="container mx-auto flex items-center justify-between text-white">
         <Link to="/">
           <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
@@ -71,14 +80,7 @@ export function Navbar({ brandName, logo,routes, action }) {
         </Link>
         <div className="hidden lg:block">{navList}</div>
         <div className="hidden gap-2 lg:flex">
-          <a
-            href="https://www.material-tailwind.com/blocks?ref=mtkr"
-            target="_blank"
-          >
-            <Button variant="text" size="sm" color="white" fullWidth>
-              pro version
-            </Button>
-          </a>
+         
           {React.cloneElement(action, {
             className: "hidden lg:inline-block",
           })}
@@ -103,15 +105,7 @@ export function Navbar({ brandName, logo,routes, action }) {
       >
         <div className="container mx-auto">
           {navList}
-          <a
-            href="https://www.material-tailwind.com/blocks/react?ref=mtkr"
-            target="_blank"
-            className="mb-2 block"
-          >
-            <Button variant="text" size="sm" fullWidth>
-              pro version
-            </Button>
-          </a>
+          
           {React.cloneElement(action, {
             className: "w-full block",
           })}
@@ -126,11 +120,11 @@ Navbar.defaultProps = {
   logo: "/public/img/acm_wlogo-removebg-preview.png",
   action: (
     <a
-      href="https://www.creative-tim.com/product/material-tailwind-kit-react"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfnqkBT-eNIJm7y8rXKfhtKgEV588aF4KoG4QyzYgIH_G5s3w/viewform?usp=sf_link"
       target="_blank"
     >
       <Button variant="gradient" size="sm" fullWidth>
-        free download
+        Register
       </Button>
     </a>
   ),
