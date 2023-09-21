@@ -24,7 +24,7 @@ export function FeatureCard({ imgSrc, title, description }) {
           width: "450px", // Change the width here
           height: "250px",
           margin: "90px",
-          backgroundImage: "url('/img/OIP.jpeg')",
+          backgroundImage: "url('/img/featurecard.webp')",
           background:"cover",
           
           // backgroundColor:"white"
@@ -38,8 +38,8 @@ export function FeatureCard({ imgSrc, title, description }) {
 
 
         <div className="flex">
-      <img src={imgSrc} alt={title} className="w-1/2" />
-      <div className="w-1/2 p-10">
+      <img src={imgSrc} alt={title} className=" w-1/1.75 lg:w-1/2" />
+      <div className="w-1/1.2 p-10 lg:w-1/2 p-10">
         <h2 className="text-lg font-semibold">{title}</h2>
         <p className="text-sm">{description}</p>
       </div>

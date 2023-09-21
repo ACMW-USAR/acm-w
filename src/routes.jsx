@@ -6,13 +6,15 @@ import {
   UserPlusIcon,
   DocumentTextIcon,
 } from "@heroicons/react/24/solid";
+import Index from "./pages/Homepage";
+import { Club } from "./pages/Homepage/club";
 
 export const routes = [
   {
     icon: HomeIcon,
     name: "home",
     path: "/home",
-    element: <Home />,
+    element: <Index />,
   },
   {
     icon: UserCircleIcon,
@@ -39,6 +41,20 @@ export const routes = [
     target: "_blank",
     element: "",
   },
+  {
+    icon: UserPlusIcon,
+    name: "Homepage",
+    path: "/Homepage",
+    element: <Index />,
+
+  },
+  {
+    icon: UserPlusIcon,
+    name: "Homepage",
+    path: "/Homepage/Club",
+    element: <Club />,
+
+  }
 ];
 
 export default routes;

@@ -79,89 +79,83 @@ export function Footer({ title, description, socials, menus, copyright }) {
 }
 
 Footer.defaultProps = {
-  title: "Material Tailwind",
+  title: "ACMW USS Student Chapter",
   description:
-    "Easy to use React components for Tailwind CSS and Material Design.",
+    "The GGSIP University USS ACM Student Chapter is an official student body incepted in 2023 under the University School USAR , GGSIPU.",
   socials: [
     {
       color: "blue",
-      name: "facebook",
-      path: "https://www.facebook.com/CreativeTim",
+      name: "Gmail",
+      path: "ggsipuacmw@gmail.com",
     },
     {
       color: "light-blue",
       name: "twitter",
-      path: "https://www.twitter.com/creativetim",
+      path: "https://twitter.com/UssAcmW",
     },
     {
       color: "purple",
       name: "instagram",
-      path: "https://www.instagram.com/creativetimofficial/",
+      path: "https://www.instagram.com/ggsipu_acmw/",
     },
     {
       color: "pink",
-      name: "dribbble",
-      path: "https://www.dribbble.com/creativetim",
+      name: "linkedIn",
+      path: "https://www.linkedin.com/company/93220388/admin/feed/posts/",
     },
-    {
-      color: "red",
-      name: "youtube",
-      path: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
-    },
-    {
-      color: "black",
-      name: "github",
-      path: "https://github.com/creativetimofficial/material-tailwind",
-    },
+    // {
+    //   color: "red",
+    //   name: "youtube",
+    //   path: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
+    // },
+    // {
+    //   color: "black",
+    //   name: "github",
+    //   path: "https://github.com/creativetimofficial/material-tailwind",
+    // },
   ],
   menus: [
     {
-      name: "useful links",
+      name: "Quick links",
       items: [
-        { name: "About Us", path: "https://www.creative-tim.com/presentation" },
-        { name: "Blog", path: "https://www.creative-tim.com/blog" },
+        { name: "IPU USAR-Home", path: "http://www.ipu.ac.in/usar/" },
+        { name: "ACM-W-India", path: "https://india.acm.org/acm-w-india" },
         {
-          name: "Github",
-          path: "https://www.github.com/creativetimofficial/material-tailwind?ref=mtk",
+          name: "ACM turing award",
+          path: "https://amturing.acm.org/",
         },
         {
-          name: "Free Products",
-          path: "https://www.creative-tim.com/templates/free?ref=mtk",
+          name: "Join ACMW",
+          path: "",
         },
       ],
     },
-    {
-      name: "other resources",
-      items: [
-        {
-          name: "MIT License",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
-        },
-        {
-          name: "Contribute",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
-        },
-        {
-          name: "Change Log",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
-        },
-        {
-          name: "Contact Us",
-          path: "https://creative-tim.com/contact-us?ref=mtk",
-        },
-      ],
-    },
+    // {
+    //   name: "other resources",
+    //   items: [
+    //     {
+    //       name: "MIT License",
+    //       path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
+    //     },
+    //     {
+    //       name: "Contribute",
+    //       path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
+    //     },
+    //     {
+    //       name: "Change Log",
+    //       path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
+    //     },
+    //     {
+    //       name: "Contact Us",
+    //       path: "https://creative-tim.com/contact-us?ref=mtk",
+    //     },
+    //   ],
+    // },
   ],
   copyright: (
     <>
-      Copyright © {year} Material Tailwind by{" "}
-      <a
-        href="https://www.creative-tim.com?ref=mtk"
-        target="_blank"
-        className="text-blue-gray-500 transition-colors hover:text-blue-500"
-      >
-        Creative Tim
-      </a>
+      © Conceptualized, Designed and Developed by Office Bearers of GGSIP University USS ACMW Student Chapter{" "}
+      
       .
     </>
   ),
