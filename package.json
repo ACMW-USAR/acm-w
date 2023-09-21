@@ -9,11 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "@heroicons/react": "^2.0.18",
-=======
     "@heroicons/react": "^1.0.4",
->>>>>>> ee13707533ffb9ab0aaaeea09fa32b5a45c65ce2
     "@material-tailwind/react": "^1.2.4",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
