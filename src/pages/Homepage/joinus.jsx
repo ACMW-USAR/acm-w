@@ -29,10 +29,7 @@ export const Joinus = () => {
       >
         <div className="absolute inset-0 bg-white bg-opacity-10"></div>
         <div className="relative z-10"></div>
-        <PageTitle
-          heading="Want to work with us?"
-          className="text-center text-white"
-        >
+        <PageTitle heading="Want to work with us?" className="text-center text-white">
           Complete this form and we will get back to you in 24 hours.
         </PageTitle>
         <form className="text-white-700 mx-auto mt-12 max-w-3xl bg-transparent">
@@ -66,21 +63,18 @@ export const Joinus = () => {
             label={<span className="text-pink-500">Any message for us?</span>}
             rows={6}
           />
-
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfnqkBT-eNIJm7y8rXKfhtKgEV588aF4KoG4QyzYgIH_G5s3w/viewform?usp=sf_link"
-            target="_blank"
+          <div className="flex justify-center mb-4">
+            
+          <Button
+            variant="gradient"
+            size="lg"
+            className="mt-8 mx-auto margin-left-70px mb-4 bg-pink-500 bg-gradient-to-tr from-pink-600 to-pink-400 text-white shadow-md shadow-pink-500/20 hover:bg-pink-600 hover:shadow-lg hover:shadow-pink-500/40"
           >
-            <div className="mb-4 flex justify-center">
-              <Button
-                variant="gradient"
-                size="lg"
-                className="margin-left-70px mx-auto mb-4 mt-8 bg-pink-500 bg-gradient-to-tr from-pink-600 to-pink-400 text-white shadow-md shadow-pink-500/20 hover:bg-pink-600 hover:shadow-lg hover:shadow-pink-500/40"
-              >
-                Register
-              </Button>
-            </div>
-          </a>
+            Register
+          </Button>
+          </div>
+          
+
         </form>
       </section>
     </>
