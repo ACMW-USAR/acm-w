@@ -1,6 +1,6 @@
-import { Routes, Route, Navigate } from "react-router-dom";
-import { Navbar } from "@/widgets/layout";
-import routes from "@/routes";
+// import { Routes, Route, Navigate } from "react-router-dom";
+// import { Navbar } from "@/widgets/layout";
+// import routes from "@/routes";
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import { Club } from "./pages/Homepage/club";
 import Team from "./pages/Homepage/team";
@@ -12,9 +12,9 @@ import Footermain from "./pages/Homepage/footermain";
 function App() {
   return (
     <>
-      <div className="container absolute left-2/4 z-10 mx-auto -translate-x-2/4 p-4">
+      {/* <div className="container absolute left-2/4 z-10 mx-auto -translate-x-2/4 p-4">
         <Navbar routes={routes} />
-      </div>
+      </div> */}
       {/* <Routes>
         {routes.map(
           ({ path, element }, key) =>
