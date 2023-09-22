@@ -9,10 +9,10 @@ import {
     Input,
     Textarea,
   } from "@material-tailwind/react";
-  import { UsersIcon } from "@heroicons/react/24/solid";
-  import { Link } from "react-router-dom";
-  import { useNavigate } from "react-router-dom";
-  import { PageTitle, Footer } from "@/widgets/layout";
+  // import { UsersIcon } from "@heroicons/react/24/solid";
+  // import { Link } from "react-router-dom";
+  // import { useNavigate } from "react-router-dom";
+  // import { PageTitle, Footer } from "@/widgets/layout";
   import { FeatureCard, TeamCard } from "@/widgets/cards";
   import { featuresData, teamData, contactData } from "@/data";
   import CardComponent from "./CardComponent"; // Import the CardComponent from the same directory
