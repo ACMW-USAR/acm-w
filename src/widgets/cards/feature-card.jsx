@@ -3,7 +3,7 @@ import {
   Card,
   CardBody,
   Typography,
-  IconButton,
+  
 } from "@material-tailwind/react";
 
 export function FeatureCard({ imgSrc, title, description }) {
@@ -24,7 +24,7 @@ export function FeatureCard({ imgSrc, title, description }) {
           width: "450px", // Change the width here
           height: "250px",
           margin: "90px",
-          backgroundImage: "url('/img/featurecard.webp')",
+          backgroundImage: "url('/img/fc.jpeg')",
           background:"cover",
           
           // backgroundColor:"white"
@@ -76,8 +76,8 @@ FeatureCard.propTypes = {
     "pink",
     "red",
   ]),
-  icon: PropTypes.node.isRequired,
-  img: PropTypes.string.isRequired,
+  // icon: PropTypes.node.isRequired,
+  // img: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.node.isRequired,
 };
