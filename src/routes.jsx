@@ -10,12 +10,7 @@ export const routes = [
   //   path: "/home",
   //   element: <Index />,
   // },
-  // {
-  //   icon: UserCircleIcon,
-  //   name: "profile",
-  //   path: "/profile",
-  //   element: <Profile />,
-  // },
+  
  
 
   {

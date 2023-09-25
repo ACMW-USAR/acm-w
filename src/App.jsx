@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+// import { Routes, Route, Navigate } from "react-router-dom";
 import { Navbar } from "@/widgets/layout";
 import routes from "@/routes";
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
@@ -13,6 +13,7 @@ function App() {
   return (
     <>
       <div className="container absolute left-2/4 z-10 mx-auto -translate-x-2/4 p-4">
+        {/* change here for fixing navbar */}
         <Navbar routes={routes} />
       </div>
       {/* <Routes>

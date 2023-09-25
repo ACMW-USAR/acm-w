@@ -2,8 +2,7 @@ import PropTypes from "prop-types";
 import {
   Card,
   CardBody,
-  Typography,
-  
+
 } from "@material-tailwind/react";
 
 export function FeatureCard({ imgSrc, title, description }) {
@@ -76,8 +75,7 @@ FeatureCard.propTypes = {
     "pink",
     "red",
   ]),
-  // icon: PropTypes.node.isRequired,
-  // img: PropTypes.string.isRequired,
+ 
   title: PropTypes.string.isRequired,
   description: PropTypes.node.isRequired,
 };

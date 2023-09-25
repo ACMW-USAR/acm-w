@@ -1,6 +1,6 @@
 import React from "react";
 
-// import { UsersIcon } from "@heroicons/react/24/solid";
+
 import { PageTitle, Footer } from "@/widgets/layout";
 
 

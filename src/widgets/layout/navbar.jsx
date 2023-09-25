@@ -9,7 +9,7 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+// import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export function Navbar({ brandName, logo,routes, action }) {
   const [openNav, setOpenNav] = React.useState(false);
@@ -70,7 +70,9 @@ export function Navbar({ brandName, logo,routes, action }) {
   );
 
   return (
-    <MTNavbar color="transparent" className="p-3 ">
+    <>
+    <div >
+    <MTNavbar color="transparent" className="p-3 " >
       <div className="container mx-auto flex items-center justify-between text-white">
         <Link to="/">
           <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
@@ -92,11 +94,16 @@ export function Navbar({ brandName, logo,routes, action }) {
           className="ml-auto text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           onClick={() => setOpenNav(!openNav)}
         >
-          {openNav ? (
+          {/* {openNav ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />
           ) : (
             <Bars3Icon strokeWidth={2} className="h-6 w-6" />
-          )}
+          )} */}
+          <img
+            src="/public/img/bars-icon.jpeg" 
+            alt="Custom Icon" 
+            className="h-6 w-6" 
+          />
         </IconButton>
       </div>
       <MobileNav
@@ -112,6 +119,10 @@ export function Navbar({ brandName, logo,routes, action }) {
         </div>
       </MobileNav>
     </MTNavbar>
+    </div>
+    
+    </>
+    
   );
 }
 

@@ -1,12 +1,3 @@
-
-// import {
-//   StarIcon,
-//   ArrowPathIcon,
-//   FingerPrintIcon,
-// } from "@heroicons/react/24/solid";
-
-
-;
 export const featuresData = [
   {
     

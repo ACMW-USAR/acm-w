@@ -7,7 +7,7 @@ import {
 } from "@material-tailwind/react";
 
 import { FeatureCard, TeamCard } from "@/widgets/cards";
-import { featuresData, teamData, contactData } from "@/data";
+import { featuresData, teamData,} from "@/data";
 import CardComponent from "../CardComponent"; // Import the CardComponent from the same directory
 
 export const Club = () => {
