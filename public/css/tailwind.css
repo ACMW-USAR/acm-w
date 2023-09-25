@@ -14,7 +14,7 @@
 /* styles.css */
 
 .bg-image {
-    background-image: url('public/img/clube.jpeg');
+    background-image: url('/img/clube.jpeg');
     background-size: cover;
     background-position: center;
   }
