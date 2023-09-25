@@ -100,7 +100,7 @@ export function Navbar({ brandName, logo,routes, action }) {
             <Bars3Icon strokeWidth={2} className="h-6 w-6" />
           )} */}
           <img
-            src="/public/img/bars-icon.jpeg" 
+            src="/img/bars-icon.jpeg" 
             alt="Custom Icon" 
             className="h-6 w-6" 
           />
@@ -128,7 +128,7 @@ export function Navbar({ brandName, logo,routes, action }) {
 
 Navbar.defaultProps = {
   brandName: " ACM_W",
-  logo: "/public/img/acm_wlogo-removebg-preview.png",
+  logo: "/img/acm_wlogo-removebg-preview.png",
   action: (
     <a
       href="https://docs.google.com/forms/d/e/1FAIpQLSfnqkBT-eNIJm7y8rXKfhtKgEV588aF4KoG4QyzYgIH_G5s3w/viewform?usp=sf_link"
