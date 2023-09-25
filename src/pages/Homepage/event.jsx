@@ -25,7 +25,7 @@ export const Event = () => {
               {/* <div className="b-card-container"> */}
                 <div className="b-card">
                   <img
-                    src="public/img/WhatsApp Image 2023-08-27 at 22.00.55.jpeg"
+                    src="./public/img/WhatsApp Image 2023-08-27 at 22.00.55.jpeg"
                     alt="dapps.co & hutlers.in"
                   />
 
@@ -51,7 +51,7 @@ export const Event = () => {
               {/* <div className="b-card-container"> */}
                 <div className="b-card">
                   <img
-                    src="public/img/WhatsApp Image 2023-08-27 at 22.01.44.jpeg"
+                    src="./public/img/WhatsApp Image 2023-08-27 at 22.01.44.jpeg"
                     alt="CARVAAN"
                   />
 
@@ -76,7 +76,7 @@ export const Event = () => {
               {/* <div className="b-card-container"> */}
                 <div className="b-card">
                   <img
-                    src="public/img/WhatsApp Image 2023-08-27 at 22.01.08.jpeg"
+                    src="./public/img/WhatsApp Image 2023-08-27 at 22.01.08.jpeg"
                     alt="Xploring Matlab"
                   />
 
