@@ -33,7 +33,7 @@ export const Club = () => {
       
           {/* *****clubs section ****** */}
 
-          <div className="mt-32 flex flex-wrap items-center">
+          <div className="mt-16 md:mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"
@@ -65,7 +65,7 @@ export const Club = () => {
               imageSrc="/img/icpc.jpeg.jpg"
               memberName="Sia Gupta"
             />
-            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
+            <div className="mx-auto  w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"
                 className="mb-3 text-center font-bold"
@@ -86,7 +86,7 @@ export const Club = () => {
 
           {/* //end of the row */}
 
-          <div className="mt-8 flex flex-wrap items-center">
+          <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"
@@ -112,12 +112,12 @@ export const Club = () => {
           </div>
           {/* end of the row */}
 
-          <div className="mt-8 flex flex-wrap items-center">
+          <div className="mt-32 flex flex-wrap items-center">
             <CardComponent
               imageSrc="/img/robo.jpg"
               memberName="Priyasvi Sharma"
             />
-            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
+            <div className="mx-auto  w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"
                 className="mb-3 text-center font-bold"
@@ -138,7 +138,7 @@ export const Club = () => {
 
           {/* end of the row */}
 
-          <div className="mt-8 flex flex-wrap items-center">
+          <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"
@@ -164,12 +164,12 @@ export const Club = () => {
             {/* end of the row */}
           </div>
 
-          <div className="mt-8 flex flex-wrap items-center">
+          <div className="mt-32 flex flex-wrap items-center">
             <CardComponent
               imageSrc="/img/cyberchain.jpeg.jpg"
               memberName="------"
             />
-            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
+            <div className="mx-auto  w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"
                 className="mb-3 text-center font-bold"
@@ -190,7 +190,7 @@ export const Club = () => {
           </div>
 
           {/* end of the row */}
-          <div className="mt-8 flex flex-wrap items-center">
+          <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"
@@ -216,9 +216,9 @@ export const Club = () => {
 
           {/* end of the row */}
 
-          <div className="mt-8 flex flex-wrap items-center">
+          <div className="mt-32 flex flex-wrap items-center">
             <CardComponent imageSrc="/img/game.jpeg.jpg" memberName="-------" />
-            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
+            <div className="mx-auto  w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"
                 className="mb-3 text-center font-bold"
@@ -237,7 +237,7 @@ export const Club = () => {
             </div>
           </div>
           {/* end of the row */}
-          <div className="mt-8 flex flex-wrap items-center">
+          <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"

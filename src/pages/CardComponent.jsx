@@ -8,7 +8,7 @@ import {
 
 function CardComponent({ imageSrc, memberName, position }) {
   return (
-    <div className="mx-auto mt-24 flex justify-center px-4 md:w-4/12 lg:mt-0">
+    <div className="mx-auto mt-21 flex justify-center px-4 md:w-4/12 lg:mt-0">
       <Card className="shadow-lg shadow-gray-500/10 transform hover:scale-105 transition-transform duration-300">
         <CardHeader className="relative h-56">
           <div className="flip-card" style={{ overflow: 'hidden' }}> {/* Add overflow: hidden here */}
