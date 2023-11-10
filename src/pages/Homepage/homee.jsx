@@ -30,7 +30,7 @@ export const Homee = () => {
               <Typography variant="lead" color="white" className="opacity-80">
                 <strong>
                   ACM-W : Supporting, Celebrating, and Advocating for Women in
-                  Computing
+                  Computing Machinery
                 </strong>
               </Typography>
             </div>
