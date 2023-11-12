@@ -1,20 +1,20 @@
 import React from 'react'
 import {
-    Card,
-    CardBody,
-    CardHeader,
-    Typography,
-    Button,
-    IconButton,
-    Input,
-    Textarea,
-  } from "@material-tailwind/react";
+  Card,
+  CardBody,
+  CardHeader,
+  Typography,
+  Button,
+  IconButton,
+  Input,
+  Textarea,
+} from "@material-tailwind/react";
 
 
 export const Homee = () => {
   return (
     <>
-    <div className="relative flex h-screen content-center items-center justify-center pb-32 pt-16">
+      <div className="relative flex h-screen content-center items-center justify-center pb-32 pt-16">
         <div className="absolute top-0 h-full w-full bg-[url('/img/event1.jpg')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
@@ -30,7 +30,7 @@ export const Homee = () => {
               <Typography variant="lead" color="white" className="opacity-80">
                 <strong>
                   ACM-W : Supporting, Celebrating, and Advocating for Women in
-                  Computing
+                  Computing Machinery
                 </strong>
               </Typography>
             </div>
