@@ -8,7 +8,6 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "homepage": "https://ussacmw.acm.org/test_acm/dist/",
   "dependencies": {
     "@material-tailwind/react": "^1.2.4",
     "prop-types": "^15.8.1",
