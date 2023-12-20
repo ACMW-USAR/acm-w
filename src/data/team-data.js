@@ -24,30 +24,30 @@ export const teamData = [
     ],
   },
   {
-    img: "/img/SAN_6751.JPG",
-    name: "Taniska Jha",
+    img: "public/img/aparna4.jpeg",
+    name: "Aparna Garg",
     position: "Vice Chair",
     socials: [
       {
         color: "light-blue",
         name: "twitter",
-        link:"https://www.Twitter.com/Taniska_Jha",
+        link:"https://twitter.com/AparnaGarg18?t=Hzj5414eBqGbC4GNk8pcLQ&s=09",
       },
       {
         color: "blue",
         name: "linkedin",
-        link:"https://www.linkedin.com/in/taniska-jha-654b22229",
+        link:"https://www.linkedin.com/in/aparna-garg-661267225/",
       },
       {
         color: "pink",
         name: "github",
-        link:"https://www.Github.com/TaniskaJha",
+        link:"https://github.com/aparnagarg04",
       },
     ],
   },
   
   {
-    img: "/img/SAN_6752.JPG",
+    img: "public/img/ayushi3.jpg",
     name: "Ayushi Gupta",
     position: " Secretary",
     socials: [
@@ -69,7 +69,7 @@ export const teamData = [
     ],
   },
   {
-    img: "/img/SAN_6760.JPG",
+    img: "public/img/khsuhbu2.jpg",
     name: "Khusbu Rai",
     position: "Joint Secretary",
     socials: [
@@ -91,7 +91,7 @@ export const teamData = [
     ],
   },
    {
-     img: "/img/WhatsApp Image 2023-08-08 at 23.57.37.jpeg",
+     img: "public/img/aparna4.jpeg",
     name: "Aparna Garg",
     position: "Web Chair",
     socials: [
@@ -113,7 +113,7 @@ export const teamData = [
     ],
    },
    {
-     img: "/img/SAN_6765.JPG",
+     img: "public/img/tina6.jpg",
      name: "Tina Goel",
      position: "Membership Chair",
      socials: [
@@ -135,7 +135,7 @@ export const teamData = [
      ],
    },
    {
-     img: "/img/SAN_6763.JPG",
+     img: "public/img/vanshika1.jpg",
     name: "Vanshika Gupta",
     position: "Treasurer",
     socials: [
@@ -157,7 +157,7 @@ export const teamData = [
      ],
    },
    {
-     img: "/img/SAN_6766.JPG",
+     img: "public/img/teja2.jpg",
     name: "Tejasvi Arneja",
      position: "Executive Member",
      socials: [
@@ -179,7 +179,7 @@ export const teamData = [
      ],
    },
    {
-    img: "/img/SAN_6753.JPG",
+    img: "public/img/tanvi.jpg",
     name: "Tanvi Gupta",
      position: "Executive Member",
      socials: [
@@ -201,7 +201,7 @@ export const teamData = [
      ],
    },
    {
-     img: "/img/SAN_6768.JPG",
+     img: "public/img/shubhangi1.jpg",
       name: "Shubhangi Mishra",
     position: "Executive Member",
     socials: [
@@ -223,7 +223,7 @@ export const teamData = [
      ],
    },
    {
-   img: "/img/SAN_6755.JPG",
+   img: "public/img/sia1.jpg",
      name: "Sia Gupta",
     position: "Executive Member",
     socials: [
@@ -245,7 +245,7 @@ export const teamData = [
      ],
    },
    {
-     img: "/img/SAN_6758.JPG",
+     img: "public/img/priyasvi.jpg",
     name: "Priyasvi Sharma",
      position: "Executive Member",
     socials: [
