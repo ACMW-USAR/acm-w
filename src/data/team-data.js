@@ -23,28 +23,28 @@ export const teamData = [
       },
     ],
   },
-  {
-    img: "public/img/aparna4.jpeg",
-    name: "Aparna Garg",
-    position: "Vice Chair",
-    socials: [
-      {
-        color: "light-blue",
-        name: "twitter",
-        link:"https://twitter.com/AparnaGarg18?t=Hzj5414eBqGbC4GNk8pcLQ&s=09",
-      },
-      {
-        color: "blue",
-        name: "linkedin",
-        link:"https://www.linkedin.com/in/aparna-garg-661267225/",
-      },
-      {
-        color: "pink",
-        name: "github",
-        link:"https://github.com/aparnagarg04",
-      },
-    ],
-  },
+ // {
+    //img: "public/img/aparna4.jpeg",
+    //name: "Aparna Garg",
+    //position: "Vice Chair",
+    //socials: [
+  //     {
+  //       color: "light-blue",
+  //       name: "twitter",
+  //       link:"https://twitter.com/AparnaGarg18?t=Hzj5414eBqGbC4GNk8pcLQ&s=09",
+  //     },
+  //     {
+  //       color: "blue",
+  //       name: "linkedin",
+  //       link:"https://www.linkedin.com/in/aparna-garg-661267225/",
+  //     },
+  //     {
+  //       color: "pink",
+  //       name: "github",
+  //       link:"https://github.com/aparnagarg04",
+  //     },
+  //   ],
+  // },
   
   {
     img: "public/img/ayushi3.jpg",
