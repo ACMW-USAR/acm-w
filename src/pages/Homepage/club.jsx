@@ -1,39 +1,32 @@
-import React from 'react'
+import React from "react";
 
-import {
-  
-  Typography,
-  
-} from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 
 import { FeatureCard, TeamCard } from "@/widgets/cards";
-import { featuresData, teamData,} from "@/data";
+import { featuresData, teamData } from "@/data";
 import CardComponent from "../CardComponent"; // Import the CardComponent from the same directory
 
 export const Club = () => {
   return (
     <>
-    {/* ***** mentors***** */}
+      {/* ***** mentors***** */}
 
-    <section className="bg-image -mt-32 bg-gray-50 px-4 pb-20 pt-4">
+      <section className="bg-image -mt-32 bg-gray-50 px-4 pb-20 pt-4">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 w- h-1/1.3  lg:grid-cols-2 ">
+          <div className="w- h-1/1.3 grid grid-cols-1  lg:grid-cols-2 ">
             {featuresData.map(({ title, imgSrc, description }) => (
-              <FeatureCard 
+              <FeatureCard
                 key={title}
                 title={title}
                 imgSrc={imgSrc}
                 description={description}
-                
               />
             ))}
           </div>
-      
-          
-      
+
           {/* *****clubs section ****** */}
 
-          <div className="mt-16 md:mt-32 flex flex-wrap items-center">
+          <div className="mt-16 flex flex-wrap items-center md:mt-32">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"
@@ -167,7 +160,7 @@ export const Club = () => {
           <div className="mt-32 flex flex-wrap items-center">
             <CardComponent
               imageSrc="/img/cyberchain.jpeg.jpg"
-              memberName="------"
+              memberName="Gauranshi Gupta"
             />
             <div className="mx-auto  w-full px-4 md:w-5/12">
               <Typography
@@ -217,7 +210,7 @@ export const Club = () => {
           {/* end of the row */}
 
           <div className="mt-32 flex flex-wrap items-center">
-            <CardComponent imageSrc="/img/game.jpeg.jpg" memberName="-------" />
+            <CardComponent imageSrc="/img/game.jpeg.jpg" memberName="Abhisha" />
             <div className="mx-auto  w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"
@@ -258,7 +251,7 @@ export const Club = () => {
 
             <CardComponent
               imageSrc="/img/lens.jpg"
-              memberName="------"
+              memberName="Muskan"
               position="Lead"
             />
           </div>
@@ -266,5 +259,5 @@ export const Club = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
