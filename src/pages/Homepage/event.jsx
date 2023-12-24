@@ -36,7 +36,7 @@ export const Event = () => {
                     href="javascript:void(0)"
                     onClick={() => handleTabClick("first")}
                   >
-                    Tech Events
+                    Tech 
                   </a>
                 </div>
                 <div className="nav-item">
@@ -51,7 +51,7 @@ export const Event = () => {
                     href="javascript:void(0)"
                     onClick={() => handleTabClick("second")}
                   >
-                    Non-Tech Events
+                    Non-Tech
                   </a>
                 </div>
                 
