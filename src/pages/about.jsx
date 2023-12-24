@@ -14,7 +14,7 @@ const About = () => {
   return (
     <>
       <div className="relative flex h-screen content-center items-center justify-center pb-32 pt-16">
-        <div className="absolute top-0 h-full w-full bg-[url('/img/SAN_6770.jpg')] bg-cover bg-center" />
+        <div className="absolute top-0 h-full w-full bg-[url('/img/about.jpg')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/70 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
