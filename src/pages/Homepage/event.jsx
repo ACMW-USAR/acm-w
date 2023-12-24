@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export const Event = () => {
-  const [activeTab, setActiveTab] = useState("first"); // Default to Full Stack Projects
+  const [activeTab, setActiveTab] = useState("second"); // Default to Full Stack Projects
 
   const handleTabClick = (eventKey) => {
     setActiveTab(eventKey);
