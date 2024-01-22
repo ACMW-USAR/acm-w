@@ -6,7 +6,10 @@ export const Blog = () => {
         <div className="main_container">
     
     {/* <!--IF YOU WANT YOU CAN REMOVE THIS MAIN_CONTAINER JUST PASTE THE CARD SECTION AND IT WILL WORK FINE --> */}
-<h2>Blog Section</h2>
+    <div className="text-center">
+                    <h2 className="text-5xl font-bold text-black mb-2">Blogs Section</h2>
+                    <p className="text-gray-600">Discover the latest insights and trends in the world of finance and investments.</p>
+                </div>
     
         <div className="card_container">
     
@@ -16,10 +19,10 @@ export const Blog = () => {
     
                     <div className="card">
                         <a href="">
-                            <div className="card_image"><img src="images/stonks1.jpg" alt=""></img></div>
+                            <div className="card_image"><img src="\img\stonks1.jpg" alt=""></img></div>
                             <div className="card_panel">
                                 <div className="card_main_title"><h2>How to get started in stockmarket in 2022</h2></div>
-                                <div className="card_para"><p>a detailed post on how to invest in stocks</p></div>
+                                {/* <div className="card_para"><p>a detailed post on how to invest in stocks</p></div> */}
                                 <div className="tags_section">
                                     <ul>
     
@@ -36,10 +39,10 @@ export const Blog = () => {
     
                     <div className="card">
                         <a href="">
-                            <div className="card_image"><img src="images/photos1.jpg" alt=""></img></div>
+                            <div className="card_image"><img src="\img\photos1.jpg" alt=""></img></div>
                             <div className="card_panel">
                                 <div className="card_main_title"><h2>Future Of Cyber-Security</h2></div>
-                                <div className="card_para"><p>learn how to protect yourselffrom data breaches stuff</p></div>
+                                {/* <div className="card_para"><p>learn how to protect yourselffrom data breaches stuff</p></div> */}
                                 <div className="tags_section">
                                     <ul>
     
@@ -57,10 +60,10 @@ export const Blog = () => {
     
                     <div className="card">
                         <a href="">
-                            <div className="card_image"><img src="images/photos3.jpg" alt=""></img></div>
+                            <div className="card_image"><img src="\img\photos3.jpg" alt=""></img></div>
                             <div className="card_panel">
                                 <div className="card_main_title"><h2>AI Changing The World</h2></div>
-                                <div className="card_para"><p>learn about neural networks and linear algebra</p></div>
+                                {/* <div className="card_para"><p>learn about neural networks and linear algebra</p></div> */}
                                 <div className="tags_section">
                                     <ul>
     
@@ -77,10 +80,10 @@ export const Blog = () => {
     
                     <div className="card">
                         <a href="">
-                            <div className="card_image"><img src="images/photos4.jpg" alt=""></img></div>
+                            <div className="card_image"><img src="\img\photos4.jpg" alt=""></img></div>
                             <div className="card_panel">
                                 <div className="card_main_title"><h2>Top 10 digital marketing strategies</h2></div>
-                                <div className="card_para"><p>a detailed post on social media  stuffs</p></div>
+                                {/* <div className="card_para"><p>a detailed post on social media  stuffs</p></div> */}
                                 <div className="tags_section">
                                     <ul>
     
@@ -97,7 +100,7 @@ export const Blog = () => {
     
                     <div className="card">
                         <a href="">
-                            <div className="card_image"><img src="\img\stonks1.jpg" alt=""></img></div>
+                            <div className="card_image"><img src="\img\photos2.jpg" alt=""></img></div>
                             <div className="card_panel">
                                 <div className="card_main_title"><h2>7 strategies to manage your time and work</h2></div>
                                {/* <div className="card_para"><p>learn about maths in this blog posts</p></div> */}
@@ -117,10 +120,10 @@ export const Blog = () => {
     
                     <div className="card">
                         <a href="">
-                            <div className="card_image"><img src="images/photos5.jpg" alt=""></img></div>
+                            <div className="card_image"><img src="\img\photos5.jpg" alt=""></img></div>
                             <div className="card_panel">
                                 <div className="card_main_title"><h2>6 ways to manage your business</h2></div>
-                                <div className="card_para"><p>learn how you can  manage your business </p></div>
+                                {/* <div className="card_para"><p>learn how you can  manage your business </p></div> */}
                                 <div className="tags_section">
                                     <ul>
     
