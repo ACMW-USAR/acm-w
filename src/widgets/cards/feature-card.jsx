@@ -7,31 +7,34 @@ export function FeatureCard({ imgSrc, title, description }) {
     "transition-opacity duration-1000 ease-out opacity-100   ";
 
   return (
-    <div className="flex items-center justify-center ">
+    <div>
       <Card
-        className={`rounded-2xl text-black shadow-lg ${gradientClass}`}
+        className={`mb-5 md:mr-5 ${gradientClass}`}
         style={{
-          width: "450px", // Change the width here
-          height: "250px",
-          margin: "90px",
+          width:"80%",
+          height:"auto",
           backgroundImage: "url('/img/fc.jpeg')",
           background: "cover",
-
-          // backgroundColor:"white"
+          margin: "0 auto",
+          marginBottom: "1rem",
+          marginTop: "5rem",
         }}
       >
         <div className={transitionClass}></div>
-        <CardBody className={`px-8 text-center ${transitionClass}`}>
-          <div className="flex">
+        <CardBody className={`px-4 text-center md:px-8 ${transitionClass}`}>
+          <div className="flex flex-col md:flex-row">
             <img
               src={imgSrc}
               alt={title}
-              className=" w-1/1.75 rounded-2xl lg:w-1/2"
+              className="mb-4 w-full rounded-l-2xl md:mb-0 md:mr-4 md:w-1/2"
             />
-            <div className="w-1/1.2 p-10 p-10 lg:w-1/2">
-              <h1 className="text-lg font-semibold">{title}</h1>
-              <br />
-              <p className="text-sm">{description}</p>
+            <div className="w-full md:w-1/2">
+              <h1 className="mb-2 text-xl font-bold md:text-2xl lg:text-3xl xl:text-4xl">
+                {title}
+              </h1>
+              <p className="text-sm md:text-base lg:text-lg xl:text-xl">
+                {description}
+              </p>
             </div>
           </div>
         </CardBody>
