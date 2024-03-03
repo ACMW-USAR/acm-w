@@ -1,154 +1,79 @@
 import React from "react";
 
-export const Blog = () => {
-    return (
-        <>
-        <div className="main_container">
-    
-    {/* <!--IF YOU WANT YOU CAN REMOVE THIS MAIN_CONTAINER JUST PASTE THE CARD SECTION AND IT WILL WORK FINE --> */}
-    <div className="text-center">
-                    <h2 className="text-5xl font-bold text-black mb-2">Blogs Section</h2>
-                    <p className="text-gray-600">Discover the latest insights and trends in the world of finance and investments.</p>
-                </div>
-    
-        <div className="card_container">
-    
-            
-                <div className="card_section">
-    
-    
-                    <div className="card">
-                        <a href="">
-                            <div className="card_image"><img src="\img\stonks1.jpg" alt=""></img></div>
-                            <div className="card_panel">
-                                <div className="card_main_title"><h2>How to get started in stockmarket in 2022</h2></div>
-                                {/* <div className="card_para"><p>a detailed post on how to invest in stocks</p></div> */}
-                                <div className="tags_section">
-                                    <ul>
-    
-                                        <li>#stocks</li>
-                                        <li>#shares</li>
-                                        <li>#NYSE</li>
-                                    </ul>
-                                </div>
-                                <div className="card_readmore"><span>Read More</span></div>
-                            </div>
-                        </a>
-                    </div>
-    
-    
-                    <div className="card">
-                        <a href="">
-                            <div className="card_image"><img src="\img\photos1.jpg" alt=""></img></div>
-                            <div className="card_panel">
-                                <div className="card_main_title"><h2>Future Of Cyber-Security</h2></div>
-                                {/* <div className="card_para"><p>learn how to protect yourselffrom data breaches stuff</p></div> */}
-                                <div className="tags_section">
-                                    <ul>
-    
-                                        <li>#security</li>
-                                        <li>#data</li>
-                                        <li>#resaerchers</li>
-                                    </ul>
-                                </div>
-                                <div className="card_readmore"><span>Read More</span></div>
-                            </div>
-                        </a>
-                    </div>
-    
-    
-    
-                    <div className="card">
-                        <a href="">
-                            <div className="card_image"><img src="\img\photos3.jpg" alt=""></img></div>
-                            <div className="card_panel">
-                                <div className="card_main_title"><h2>AI Changing The World</h2></div>
-                                {/* <div className="card_para"><p>learn about neural networks and linear algebra</p></div> */}
-                                <div className="tags_section">
-                                    <ul>
-    
-                                        <li>#AI</li>
-                                        <li>#Neural networks</li>
-                                        <li>#NLP</li>
-                                    </ul>
-                                </div>
-                                <div className="card_readmore"><span>Read More</span></div>
-                            </div>
-                        </a>
-                    </div>
-    
-    
-                    <div className="card">
-                        <a href="">
-                            <div className="card_image"><img src="\img\photos4.jpg" alt=""></img></div>
-                            <div className="card_panel">
-                                <div className="card_main_title"><h2>Top 10 digital marketing strategies</h2></div>
-                                {/* <div className="card_para"><p>a detailed post on social media  stuffs</p></div> */}
-                                <div className="tags_section">
-                                    <ul>
-    
-                                        <li>#SEO</li>
-                                        <li>#Offsite SEO</li>
-                                        <li>#Digital</li>
-                                    </ul>
-                                </div>
-                                <div className="card_readmore"><span>Read More</span></div>
-                            </div>
-                        </a>
-                    </div>
-    
-    
-                    <div className="card">
-                        <a href="">
-                            <div className="card_image"><img src="\img\photos2.jpg" alt=""></img></div>
-                            <div className="card_panel">
-                                <div className="card_main_title"><h2>7 strategies to manage your time and work</h2></div>
-                               {/* <div className="card_para"><p>learn about maths in this blog posts</p></div> */}
-                                <div className="tags_section">
-                                    <ul>
-    
-                                        <li>#time</li>
-                                        <li>#work</li>
-                                        <li>#tips and tricks</li>
-                                    </ul>
-                                </div>
-                                <div className="card_readmore"><span>Read More</span></div>
-                            </div>
-                        </a>
-                    </div>
-    
-    
-                    <div className="card">
-                        <a href="">
-                            <div className="card_image"><img src="\img\photos5.jpg" alt=""></img></div>
-                            <div className="card_panel">
-                                <div className="card_main_title"><h2>6 ways to manage your business</h2></div>
-                                {/* <div className="card_para"><p>learn how you can  manage your business </p></div> */}
-                                <div className="tags_section">
-                                    <ul>
-    
-                                        <li>#strategies</li>
-                                        <li>#business</li>
-                                        <li>#manage</li>
-                                    </ul>
-                                </div>
-                                <div className="card_readmore"><span>Read More</span></div>
-                            </div>
-                        </a>
-                    </div>
-    
-    
-    
-    
-                </div>
-    
-    
+// Define a reusable Card component
+const Card = ({ imageSrc, title, writtenBy, readMoreUrl }) => (
+  <div className="card">
+    <a href={readMoreUrl} target="_blank" rel="noopener noreferrer">
+      <div className="card_image"><img src={imageSrc} alt="" /></div>
+      <div className="card_panel">
+      <div className="card_main_title "><h2 className="font-bold text-6xl md:text-7xl lg:text-8xl xl:text-9xl">{title}</h2></div>
+        <div className="card_buttons flex justify-between ">
+        <div className="flex-grow" style={{marginTop:"14px"}}>
+          <button className=" bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full">{writtenBy}</button>
         </div>
-    
-    
-    </div>
-        </>
-    );
+        <div className="card_readmore ml-4">
+          <a href={readMoreUrl} className=" bg-blue-400 hover:bg-blue-500 text-white  py-2 px-4 ">
+            Read More</a></div>
+            </div>
+      </div>
+    </a>
+  </div>
+);
 
+export const Blog = () => {
+  return (
+    <>
+      <div style={{backgroundImage: "url('/img/Screenshot (1092).png')",padding:"100px"}}>
+        <div className="text-center mb-8 ">
+          <h2 className="text-6xl font-bold text-black ">BLOGS SECTION</h2>
+          {/* <p className="text-white">Discover the latest insights and trends in the world of finance and investments.</p> */}
+        </div>
+        <div className="card_container">
+          <div className="card_section">
+            {/* Render Card component for each blog */}
+            <Card
+              imageSrc="\img\stonks1.jpg"
+              title="Beginners Guide to Azure ML"
+              writtenBy="Gauranshi Gupta"
+              readMoreUrl="https://medium.com/@gauranshigupta2000/beginners-guide-to-azure-machine-learning-designer-fcfa4cbbbf30"
+            />
+            <Card
+              imageSrc="\img\photos1.jpg"
+              title="Future Of Cyber-Security"
+              writtenBy="Jane Smith"
+              readMoreUrl="https://example.com/future-cyber-security"
+            />
+              <Card
+              imageSrc="\img\photos3.jpg"
+              title="AI Changing The World"
+              writtenBy="Alice Johnson"
+              readMoreUrl="https://example.com/future-cyber-security"
+            />
+            <Card
+              imageSrc="\img\photos4.jpg"
+              title="Digital marketing strategies"
+              writtenBy="Bob Thompson"
+              readMoreUrl="https://example.com/future-cyber-security"
+            />
+            <Card
+              imageSrc="\img\photos2.jpg"
+              title="7 strategies to manage "
+              writtenBy="Emily Davis"
+              readMoreUrl="https://example.com/future-cyber-security"
+            />
+            <Card
+              imageSrc="\img\photos5.jpg"
+              title="To manage your business"
+              writtenBy="Michael Brown"
+              readMoreUrl="https://example.com/future-cyber-security"
+            />
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
+
 export default Blog;
+
+
