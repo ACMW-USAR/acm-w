@@ -1,76 +1,44 @@
-import PropTypes from "prop-types";
-import { Card, CardBody } from "@material-tailwind/react";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { Card, CardBody } from '@material-tailwind/react';
 
 export function FeatureCard({ imgSrc, title, description }) {
-  const gradientClass = "../public/img/OIP(1).jpeg";
-  const transitionClass =
-    "transition-opacity duration-1000 ease-out opacity-100   ";
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="flex items-center justify-center ">
-      <Card
-        className={`rounded-2xl text-black shadow-lg ${gradientClass}`}
-        style={{
-          width: "450px", // Change the width here
-          height: "250px",
-          margin: "90px",
-          backgroundImage: "url('/img/fc.jpeg')",
-          background: "cover",
-
-          // backgroundColor:"white"
-        }}
-      >
-        <div className={transitionClass}></div>
-        <CardBody className={`px-8 text-center ${transitionClass}`}>
-          <div className="flex">
-            <img
-              src={imgSrc}
-              alt={title}
-              className=" w-1/1.75 rounded-2xl lg:w-1/2"
-            />
-            <div className="w-1/1.2 p-10 p-10 lg:w-1/2">
-              <h1 className="text-lg font-semibold">{title}</h1>
-              <br />
-              <p className="text-sm">{description}</p>
-            </div>
+    <div className="flex justify-center items-center h-screen">
+      <div className="relative">
+        <a
+          href="#"
+          className="relative flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <img
+            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+            src={imgSrc}
+            alt={title}
+          />
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className={`mb-2 text-2xl font-bold tracking-tight ${isHovered ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300 text-gray-900 dark:text-white`}>{title}</h5>
+            <p className={`mb-3 font-normal ${isHovered ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300 text-gray-700 dark:text-gray-400`}>{description}</p>
+            {isHovered && (
+              <>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"></h5>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
+              </>
+            )}
           </div>
-        </CardBody>
-      </Card>
+        </a>
+      </div>
     </div>
   );
 }
 
-FeatureCard.defaultProps = {
-  color: "blue",
-};
-
 FeatureCard.propTypes = {
-  color: PropTypes.oneOf([
-    "blue-gray",
-    "gray",
-    "brown",
-    "deep-orange",
-    "orange",
-    "amber",
-    "yellow",
-    "lime",
-    "light-green",
-    "green",
-    "teal",
-    "cyan",
-    "light-blue",
-    "blue",
-    "indigo",
-    "deep-purple",
-    "purple",
-    "pink",
-    "red",
-  ]),
-
+  imgSrc: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.node.isRequired,
+  description: PropTypes.string.isRequired,
 };
-
-FeatureCard.displayName = "/src/widgets/layout/feature-card.jsx";
 
 export default FeatureCard;
