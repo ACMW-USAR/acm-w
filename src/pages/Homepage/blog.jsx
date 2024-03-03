@@ -8,10 +8,10 @@ const Card = ({ imageSrc, title, writtenBy, readMoreUrl }) => (
       <div className="card_panel">
       <div className="card_main_title "><h2 className="font-bold text-6xl md:text-7xl lg:text-8xl xl:text-9xl">{title}</h2></div>
         <div className="card_buttons flex justify-between ">
-        <div className="flex-grow" style={{marginTop:"14px"}}>
+        <div className="flex-grow" style={{marginTop:"100px"}}>
           <button className=" bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full">{writtenBy}</button>
         </div>
-        <div className="card_readmore ml-4">
+        <div className="card_readmore ml-9">
           <a href={readMoreUrl} className=" bg-blue-400 hover:bg-blue-500 text-white  py-2 px-4 ">
             Read More</a></div>
             </div>
@@ -23,7 +23,7 @@ const Card = ({ imageSrc, title, writtenBy, readMoreUrl }) => (
 export const Blog = () => {
   return (
     <>
-      <div style={{backgroundImage: "url('/img/Screenshot (1092).png')",padding:"100px"}}>
+      <div style={{backgroundImage: "url('/img/Screenshot (1089).png')",padding:"100px"}}>
         <div className="text-center mb-8 ">
           <h2 className="text-6xl font-bold text-black ">BLOGS SECTION</h2>
           {/* <p className="text-white">Discover the latest insights and trends in the world of finance and investments.</p> */}
