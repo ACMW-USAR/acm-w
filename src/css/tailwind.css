@@ -9,10 +9,14 @@
   position: relative;
 }
 
+<<<<<<< HEAD
 .h-fullw-full {
   border-radius: 10px; 
   overflow: hidden;   
 }
+=======
+
+>>>>>>> 2576e7d77cb9abc8a7fceee38e6e956eed3d8c21
 /* Center the container */
 .container {
   margin-left: auto;

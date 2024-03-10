@@ -1,65 +1,44 @@
-import PropTypes from "prop-types";
-import {
-  Card,
-  CardBody,
-  Typography,
-  IconButton,
-} from "@material-tailwind/react";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { Card, CardBody } from '@material-tailwind/react';
 
-export function FeatureCard({ color, icon, title, description }) {
+export function FeatureCard({ imgSrc, title, description }) {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <Card className="rounded-2xl shadow-lg shadow-gray-500/10">
-      <CardBody className="px-8 text-center">
-        <IconButton
-          variant="gradient"
-          size="lg"
-          color={color}
-          className="pointer-events-none mb-6 rounded-full"
+    <div className="flex justify-center items-center h-screen">
+      <div className="relative">
+        <a
+          href="#"
+          className="relative flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
-          {icon}
-        </IconButton>
-        <Typography variant="h5" className="mb-2" color="blue-gray">
-          {title}
-        </Typography>
-        <Typography className="font-normal text-blue-gray-600">
-          {description}
-        </Typography>
-      </CardBody>
-    </Card>
+          <img
+            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+            src={imgSrc}
+            alt={title}
+          />
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className={`mb-2 text-2xl font-bold tracking-tight ${isHovered ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300 text-gray-900 dark:text-white`}>{title}</h5>
+            <p className={`mb-3 font-normal ${isHovered ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300 text-gray-700 dark:text-gray-400`}>{description}</p>
+            {isHovered && (
+              <>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"></h5>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
+              </>
+            )}
+          </div>
+        </a>
+      </div>
+    </div>
   );
 }
 
-FeatureCard.defaultProps = {
-  color: "blue",
-};
-
 FeatureCard.propTypes = {
-  color: PropTypes.oneOf([
-    "blue-gray",
-    "gray",
-    "brown",
-    "deep-orange",
-    "orange",
-    "amber",
-    "yellow",
-    "lime",
-    "light-green",
-    "green",
-    "teal",
-    "cyan",
-    "light-blue",
-    "blue",
-    "indigo",
-    "deep-purple",
-    "purple",
-    "pink",
-    "red",
-  ]),
-  icon: PropTypes.node.isRequired,
+  imgSrc: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.node.isRequired,
+  description: PropTypes.string.isRequired,
 };
-
-FeatureCard.displayName = "/src/widgets/layout/feature-card.jsx";
 
 export default FeatureCard;

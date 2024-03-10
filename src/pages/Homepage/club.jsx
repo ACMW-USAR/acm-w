@@ -45,17 +45,29 @@ export const Club = () => {
               </Typography>
             </div>
 
+<<<<<<< HEAD
             <CardComponent 
               imageSrc="/img/newclub/researchnew.jpg"
               memberName="Shubhangi Mishra"
             />
             </div>
+=======
+            <CardComponent
+              imageSrc="/img/research.jpeg.jpg"
+              memberName="Shubhangi Mishra"
+            />
+          </div>
+>>>>>>> 2576e7d77cb9abc8a7fceee38e6e956eed3d8c21
 
           {/* end of the row */}
 
           <div className="mt-32 flex flex-wrap items-center">
             <CardComponent
+<<<<<<< HEAD
               imageSrc="/img/newclub/letscode.jpg"
+=======
+              imageSrc="/img/icpc.jpeg.jpg"
+>>>>>>> 2576e7d77cb9abc8a7fceee38e6e956eed3d8c21
               memberName="Sia Gupta"
             />
             <div className="mx-auto  w-full px-4 md:w-5/12">
@@ -99,7 +111,11 @@ export const Club = () => {
             </div>
 
             <CardComponent
+<<<<<<< HEAD
               imageSrc="/img/newclub/innovate.jpg"
+=======
+              imageSrc="/img/ai.jpeg.jpg"
+>>>>>>> 2576e7d77cb9abc8a7fceee38e6e956eed3d8c21
               memberName="Tejasvi Arneja"
             />
           </div>
@@ -107,7 +123,11 @@ export const Club = () => {
 
           <div className="mt-32 flex flex-wrap items-center">
             <CardComponent
+<<<<<<< HEAD
               imageSrc="/img/newclub/roboticsnew.jpg"
+=======
+              imageSrc="/img/robo.jpg"
+>>>>>>> 2576e7d77cb9abc8a7fceee38e6e956eed3d8c21
               memberName="Priyasvi Sharma"
             />
             <div className="mx-auto  w-full px-4 md:w-5/12">
@@ -150,7 +170,11 @@ export const Club = () => {
             </div>
 
             <CardComponent
+<<<<<<< HEAD
               imageSrc="/img/newclub/devsrc.jpg"
+=======
+              imageSrc="/img/devsource.jpg"
+>>>>>>> 2576e7d77cb9abc8a7fceee38e6e956eed3d8c21
               memberName="Khushbu Rai"
             />
 
@@ -159,7 +183,11 @@ export const Club = () => {
 
           <div className="mt-32 flex flex-wrap items-center">
             <CardComponent
+<<<<<<< HEAD
               imageSrc="/img/newclub/cyberc.jpg"
+=======
+              imageSrc="/img/cyberchain.jpeg.jpg"
+>>>>>>> 2576e7d77cb9abc8a7fceee38e6e956eed3d8c21
               memberName="Gauranshi Gupta"
             />
             <div className="mx-auto  w-full px-4 md:w-5/12">
@@ -210,7 +238,11 @@ export const Club = () => {
           {/* end of the row */}
 
           <div className="mt-32 flex flex-wrap items-center">
+<<<<<<< HEAD
             <CardComponent imageSrc="/img/newclub/gamenew.jpg" memberName="Abhisha" />
+=======
+            <CardComponent imageSrc="/img/game.jpeg.jpg" memberName="Abhisha" />
+>>>>>>> 2576e7d77cb9abc8a7fceee38e6e956eed3d8c21
             <div className="mx-auto  w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"
@@ -250,8 +282,14 @@ export const Club = () => {
             </div>
 
             <CardComponent
+<<<<<<< HEAD
               imageSrc="/img/newclub/cam.jpg"
               memberName="Muskan"
+=======
+              imageSrc="/img/lens.jpg"
+              memberName="Muskan"
+              position="Lead"
+>>>>>>> 2576e7d77cb9abc8a7fceee38e6e956eed3d8c21
             />
           </div>
           {/* end of the row */}
@@ -260,4 +298,7 @@ export const Club = () => {
     </>
   );
 };
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2576e7d77cb9abc8a7fceee38e6e956eed3d8c21

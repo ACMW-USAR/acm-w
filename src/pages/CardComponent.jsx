@@ -8,7 +8,7 @@ import {
 
 function CardComponent({ imageSrc, memberName, position }) {
   return (
-    <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
+    <div className="mx-auto mt-21 flex justify-center px-4 md:w-4/12 lg:mt-0">
       <Card className="shadow-lg shadow-gray-500/10 transform hover:scale-105 transition-transform duration-300">
       <img
                   alt="Card Image"
