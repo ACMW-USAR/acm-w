@@ -17,6 +17,9 @@ import { Homee } from "./pages/Homepage/homee";
 import Joinus from "./pages/Homepage/joinus";
 import Footermain from "./pages/Homepage/footermain";
 import About from "./pages/about";
+import Blog from "./pages/Homepage/blog";
+
+
 
 function App() {
   return (
@@ -46,6 +49,10 @@ function App() {
 
               <Element name="event">
                 <Event />
+              </Element>
+              
+              <Element name="Blog">
+                <Blog />
               </Element>
 
               <Element name="joinus">
