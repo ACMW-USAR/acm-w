@@ -206,7 +206,14 @@ top:-0.15%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-decoration: none;
 }
-
+/* Blogs Section Heading */
+.blogs-heading {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  margin: 20px 0; /* Add margin to create space */
+  gap:20px ;
+}
  /* .main_container {
   margin-top: 60px; */
   /* margin-left: 40px;
