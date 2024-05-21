@@ -11,7 +11,7 @@ export const Club = () => {
     <>
       {/* ***** mentors***** */}
 
-      <section className="bg-image -mt-32 bg-gray-50 px-4 pb-20 pt-4">
+      <section className="bg-image">
         <div className="container mx-auto">
           <div className="w- h-1/1.3 grid grid-cols-1  lg:grid-cols-2 ">
             {featuresData.map(({ title, imgSrc, description }) => (
@@ -46,7 +46,7 @@ export const Club = () => {
             </div>
 
             <CardComponent
-              imageSrc="/img/research.jpeg.jpg"
+              imageSrc="/img/newclub/researchnew.jpg"
               memberName="Shubhangi Mishra"
             />
           </div>
@@ -55,7 +55,7 @@ export const Club = () => {
 
           <div className="mt-32 flex flex-wrap items-center">
             <CardComponent
-              imageSrc="/img/icpc.jpeg.jpg"
+              imageSrc="/img/newclub/letscode.jpg"
               memberName="Sia Gupta"
             />
             <div className="mx-auto  w-full px-4 md:w-5/12">
@@ -99,7 +99,7 @@ export const Club = () => {
             </div>
 
             <CardComponent
-              imageSrc="/img/ai.jpeg.jpg"
+              imageSrc="/img/newclub/innovate.jpg"
               memberName="Tejasvi Arneja"
             />
           </div>
@@ -107,7 +107,7 @@ export const Club = () => {
 
           <div className="mt-32 flex flex-wrap items-center">
             <CardComponent
-              imageSrc="/img/robo.jpg"
+              imageSrc="/img/newclub/roboticsnew.jpg"
               memberName="Priyasvi Sharma"
             />
             <div className="mx-auto  w-full px-4 md:w-5/12">
@@ -150,7 +150,7 @@ export const Club = () => {
             </div>
 
             <CardComponent
-              imageSrc="/img/devsource.jpg"
+              imageSrc="/img/newclub/devsrc.jpg"
               memberName="Khushbu Rai"
             />
 
@@ -159,7 +159,7 @@ export const Club = () => {
 
           <div className="mt-32 flex flex-wrap items-center">
             <CardComponent
-              imageSrc="/img/cyberchain.jpeg.jpg"
+              imageSrc="/img/newclub/cyberc.jpg"
               memberName="Gauranshi Gupta"
             />
             <div className="mx-auto  w-full px-4 md:w-5/12">
@@ -210,7 +210,7 @@ export const Club = () => {
           {/* end of the row */}
 
           <div className="mt-32 flex flex-wrap items-center">
-            <CardComponent imageSrc="/img/game.jpeg.jpg" memberName="Abhisha" />
+            <CardComponent imageSrc="/img/newclub/gamenew.jpg" memberName="Abhisha" />
             <div className="mx-auto  w-full px-4 md:w-5/12">
               <Typography
                 variant="h2"
@@ -250,7 +250,7 @@ export const Club = () => {
             </div>
 
             <CardComponent
-              imageSrc="/img/lens.jpg"
+              imageSrc="/img/newclub/cam.jpg"
               memberName="Muskan"
               position="Lead"
             />
