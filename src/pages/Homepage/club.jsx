@@ -45,11 +45,11 @@ export const Club = () => {
               </Typography>
             </div>
 
-            <CardComponent
+            <CardComponent 
               imageSrc="/img/newclub/researchnew.jpg"
               memberName="Shubhangi Mishra"
             />
-          </div>
+            </div>
 
           {/* end of the row */}
 

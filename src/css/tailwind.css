@@ -9,7 +9,10 @@
   position: relative;
 }
 
-
+.h-fullw-full {
+  border-radius: 10px; 
+  overflow: hidden;   
+}
 /* Center the container */
 .container {
   margin-left: auto;
