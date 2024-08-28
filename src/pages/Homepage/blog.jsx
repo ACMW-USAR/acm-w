@@ -23,7 +23,15 @@ const Card = ({ imageSrc, title, writtenBy, readMoreUrl }) => (
 export const Blog = () => {
   return (
     <>
-      <div style={{backgroundImage: "url('/img/Screenshot (1089).png')",padding:"100px"}}>
+      <div 
+      style={{backgroundImage: "url('/img/blog_.jpeg')",
+      backgroundSize: 'cover' ,
+      backgroundRepeat: 'no-repeat' ,
+      backgroundPosition: 'center' ,
+      minHeight: '100vh',
+      padding: '20px'
+            }}
+            >
         <div className="text-center mb-8 ">
           <h2 className="text-6xl font-bold text-black ">BLOGS SECTION</h2>
           {/* <p className="text-white">Discover the latest insights and trends in the world of finance and investments.</p> */}
@@ -32,41 +40,41 @@ export const Blog = () => {
           <div className="card_section">
             {/* Render Card component for each blog */}
             <Card
-              imageSrc="\img\stonks1.jpg"
-              title="Beginners Guide to Azure ML"
+              imageSrc="/img/Screenshot (1220).png"
+              title="Web Design with tailwind css"
               writtenBy="Gauranshi Gupta"
-              readMoreUrl="https://medium.com/@gauranshigupta2000/beginners-guide-to-azure-machine-learning-designer-fcfa4cbbbf30"
+              readMoreUrl="https://medium.com/@gauranshigupta2000/mastering-responsive-web-design-with-tailwind-css-a-complete-guide-for-beginners-d620538aec0d"
             />
             <Card
-              imageSrc="\img\photos1.jpg"
-              title="Future Of Cyber-Security"
-              writtenBy="Jane Smith"
-              readMoreUrl="https://example.com/future-cyber-security"
+              imageSrc="/img/Screenshot (1224).png"
+              title="RoadMap to Learn AI"
+              writtenBy="Benedict Neo"
+              readMoreUrl="https://medium.com/bitgrit-data-science-publication/a-roadmap-to-learn-ai-in-2024-cc30c6aa6e16"
             />
               <Card
-              imageSrc="\img\photos3.jpg"
-              title="AI Changing The World"
-              writtenBy="Alice Johnson"
-              readMoreUrl="https://example.com/future-cyber-security"
+              imageSrc="/img/Screenshot (1219).png"
+              title=" Supervised Learning"
+              writtenBy="Gauranshi Gupta"
+              readMoreUrl="https://medium.com/acm-usict/understanding-supervised-learning-a-comprehensive-guide-to-classification-and-regression-models-4d82c35a70ea"
             />
-            <Card
+            {/* <Card
               imageSrc="\img\photos4.jpg"
               title="Digital marketing strategies"
               writtenBy="Bob Thompson"
               readMoreUrl="https://example.com/future-cyber-security"
-            />
-            <Card
+            /> */}
+            {/* <Card
               imageSrc="\img\photos2.jpg"
               title="7 strategies to manage "
               writtenBy="Emily Davis"
               readMoreUrl="https://example.com/future-cyber-security"
-            />
-            <Card
+            /> */}
+            {/* <Card
               imageSrc="\img\photos5.jpg"
               title="To manage your business"
               writtenBy="Michael Brown"
               readMoreUrl="https://example.com/future-cyber-security"
-            />
+            /> */}
           </div>
         </div>
       </div>
